@@ -6,7 +6,7 @@ const Nav = () => {
             <img src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png" 
             alt='logo' height='50px' width="50px"/>
             <Link href="/" legacyBehavior>
-                <a>HomePage</a>
+                <a>Home</a>
             </Link>
             
             <Link href="/product" legacyBehavior>
