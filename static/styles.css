@@ -1,0 +1,15 @@
+.myNav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #f7fbff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* background: rgb(42, 161, 52); */
+    padding: 20px;
+}
+
+.home{
+    z-index: -1;
+}
