@@ -1,9 +1,37 @@
-import Link from "next/link";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Productlist from "@/components/Productlist";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Index = () => {
+
+    const [items, setItems] = useState([])
+
+    useEffect( () => {
+
+        const getItems = async() => {
+            try {
+                const response = await axios.get('https://fakestoreapi.com/products')
+                // console.log(response.data);
+                setItems(response.data);
+            } catch (error) {
+                console.error(error);
+            }
+            
+
+        }
+        getItems();
+        // const data = 
+        // fetch('https://fakestoreapi.com/products')
+        //     .then(res=>res.json())
+        //     .then(users=>{
+        //         console.log(users)
+        //         setItems(users)});
+    },[])
+
+
+
     return(
         <Layout 
         footer={`Copyright ${new Date().getFullYear() }`}>
@@ -24,89 +52,7 @@ const Index = () => {
                     width='100%'/>
 
                     <div className="home_row">
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                    </div>
-
-                    <div className="home_row">
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
+                        <Productlist items={items} />
                     </div>
 
                     <div className="home_row2">
@@ -130,89 +76,7 @@ const Index = () => {
                             >Shop Now</button>
                         </div>
                         <div className="home_row">
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                    </div>
-
-                    <div className="home_row">
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
-                        <Productlist 
-                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnzj_lqmmRnJzF93alLZ_Pxd-XOVAAPbaeQ&usqp=CAU"
-                        desc="50% off"
-                        title={`Trousers`}/>
+                        <Productlist items={items}/>
                     </div>
 
                     </div>
@@ -222,6 +86,7 @@ const Index = () => {
             <style jsx>{`
             .home_row{
                 display: flex;
+
                 justify-content: center;
             }
             .home_row2{

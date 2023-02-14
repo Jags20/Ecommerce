@@ -5,7 +5,7 @@ const Items = () => {
         <Layout 
         mainTitle={`here it is`}
         footer='made with love'>
-            <h1>Hi dude nd buddy</h1>
+            <h1>see you soon, love u forever</h1>
         </Layout>
     )
 }

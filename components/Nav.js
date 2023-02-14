@@ -1,10 +1,15 @@
 import Link from "next/link";
+import styles from "../styles/nav.module.css"
 
 const Nav = () => {
+
+    const buttonClick= () =>{}
     return (
-        <div className="myNav">
+        <div className={styles.myNav}>
+            <Link href="/">
             <img src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png" 
             alt='logo' height='50px' width="50px"/>
+            </Link>
             <Link href="/" legacyBehavior>
                 <a>Home</a>
             </Link>
@@ -21,7 +26,8 @@ const Nav = () => {
                 <a>Items</a>
             </Link>
 
-            <input type={`text`} placeholder='search the store'/>
+            <input type={`text`} placeholder='search the store'
+            onButtonClick={buttonClick}/>
 
             <Link href='/profile' legacyBehavior>
                 <a>Profile</a>
