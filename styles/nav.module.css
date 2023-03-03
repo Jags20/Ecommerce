@@ -2,10 +2,10 @@
     height: 50px;
     display: flex;
     align-items: center;
-    background-color: #17b811;
+    background-color: #ffffff;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1;
     /* background: rgb(42, 161, 52); */
     padding: 20px;
 }

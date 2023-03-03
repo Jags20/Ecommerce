@@ -3,7 +3,8 @@ import styles from "../styles/productlist.module.css";
 
 const Productlist = ( {items} ) => {
     return(
-        <div className={styles.card}>
+        <div className={`${styles["card"]} ${styles["grid"]}`} >
+            {/* using two className here card & grid */}
             {
                items?.map((user,i) =>{
                     return(

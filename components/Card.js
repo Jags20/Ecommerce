@@ -1,11 +1,12 @@
 const descStyle = {
     color: "white",
     margin: "auto",
+    textAlign: "center",
 }
 
 const Card = ({price, category, image}) => {
     return (
-        <div>
+        <div className="card_list">
             <img src = {image} alt="prod"
             height='60px' width='50px'/>
             <div>
@@ -21,6 +22,21 @@ const Card = ({price, category, image}) => {
                 justify-content: center;
                 margin:auto;
             }
+            .card_list{
+                display:flex;
+                flex-direction:column;
+                margin:2px;
+                border:1px solid orange;
+            }
+
+            strong{
+                display:flex;
+                justify-content:center;
+            }
+
+            .card_list:hover{
+                cursor:pointer;
+            }
             .product{
                 width:100%;
                 display: flex;
@@ -33,6 +49,8 @@ const Card = ({price, category, image}) => {
                 marging:2px;
                 color: white;
                 background:red;
+                text-align:center;
+                
             }`}</style>
         </div>
     )

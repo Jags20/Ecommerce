@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Layout from "@/components/Layout";
 
 const myStyle = {
@@ -8,13 +7,20 @@ const myStyle = {
 
 const Productlist = () => {
     return (
-        <Layout 
-        mainTitle="I'm product page" 
+        <Layout
         footer={`Made by me`}>
-            <h1>Product page!</h1>
-            <Link href="/" legacyBehavior>
-                <a style={myStyle}>Home</a>
-            </Link>
+            <div>
+              <div>
+                <img src="" alt="" />
+                <p>name</p>
+                <p>description</p>
+                <div>
+                    <small>Rs.</small>
+                    <strong>150</strong>
+                    <p>Rs. 50 off</p>    
+                </div>
+              </div>  
+            </div>
         </Layout>
     )
 }

@@ -71,7 +71,7 @@ const Index = () => {
                             {color: "white",
                              background:"blue",
                              border: "1px solid blue",
-                             width:"20%"
+                             width:"20%",
                             }}
                             >Shop Now</button>
                         </div>
@@ -91,6 +91,7 @@ const Index = () => {
             }
             .home_row2{
                 background: #0aaa1658;
+                
             }`}</style>
             {/* <h1>Hello! world</h1>
             <h6>My name is pallawi kumari. <br/>

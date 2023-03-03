@@ -42,8 +42,12 @@ const Nav = () => {
             a{
                 padding: 10px;
                 color: Black;
+                text-decoration:none;
                 margin: 5px;
                 margin-top: 5px;
+            }
+            a:hover{
+                border-bottom: 2px solid orange;
             }
             input{
                 border: 2px solid red;

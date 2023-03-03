@@ -1,13 +1,14 @@
-import Nav from "./Nav"
+import Nav from "./Nav";
+import Footer from "./Footer"
 
-const Layout = ({mainTitle, children, footer}) => {
+const Layout = ({mainTitle, children}) => {
     return(
         <div>
             <Nav/>
             <h1>{mainTitle}</h1>
             {children}
             <hr/>
-            <h3>{footer}</h3>
+            <Footer/>
         </div>
     )
 }

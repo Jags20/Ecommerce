@@ -1,5 +1,14 @@
-.card{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid black;
+.grid{
+    display: grid;
+    background-color: antiquewhite;
+    grid-auto-flow: column;
+    align-items: start;
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    /* border: 1px solid black; */
 }
+
+/* .card{
+    display: flex;
+    flex: 1;
+} */

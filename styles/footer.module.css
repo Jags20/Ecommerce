@@ -1,0 +1,35 @@
+.myFooter{
+    display: flex;
+    /* padding: 5px; */
+    justify-content:space-around;
+}
+
+.section1{
+    display: block;
+    line-height: 40%;
+    cursor: pointer;
+    color: #696b79;
+    font-size: 15px;
+    padding-bottom: 5px;
+    
+}
+
+.imgSec{
+    width: 30%;
+}
+
+.logos{
+    display: flex;
+    height: 5%;
+    /* justify-content: space-around; */
+}
+
+/* .last{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+} */
+/* .imge{
+    height: 10%;
+    width: 35%;
+} */
