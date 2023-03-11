@@ -23,8 +23,8 @@ const Card = ({price, category, image}) => {
                 margin:auto;
             }
             .card_list{
-                display:flex;
-                flex-direction:column;
+                // display:flex;
+                // flex-direction:column;
                 margin:2px;
                 border:1px solid orange;
             }

@@ -6,6 +6,8 @@
     grid-template-rows: repeat(2, auto);
     width: 100%;
     /* border: 1px solid black; */
+    /* grid-template-columns: repeat(auto-fill, 100px); */
+    /* grid-template-rows: 1fr; */
 }
 
 /* .card{

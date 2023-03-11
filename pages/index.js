@@ -34,7 +34,8 @@ const Index = () => {
 
     return(
         <Layout 
-        footer={`Copyright ${new Date().getFullYear() }`}>
+        // footer={`Copyright ${new Date().getFullYear() }`}
+        >
             <Head>
                 <title>Home</title>
             </Head>
@@ -94,7 +95,7 @@ const Index = () => {
                 
             }`}</style>
             {/* <h1>Hello! world</h1>
-            <h6>My name is pallawi kumari. <br/>
+            <h6>My name is pal. <br/>
                 <span className="fds"> My favourite game is you </span>
             </h6> */}
             {/* <Link href="/product" legacyBehavior>

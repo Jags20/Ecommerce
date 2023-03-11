@@ -18,11 +18,11 @@ const Nav = () => {
                 <a>Product</a>
             </Link>
 
-            <Link href='/homedecor' legacyBehavior>
+            <Link href='/product' legacyBehavior>
                 <a>Decor</a>
             </Link>
 
-            <Link href='/items' legacyBehavior>
+            <Link href='/product' legacyBehavior>
                 <a>Items</a>
             </Link>
 

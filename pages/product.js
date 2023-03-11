@@ -1,28 +1,40 @@
 import Layout from "@/components/Layout";
+import axios from "axios";
+import Head from "next/head";
+import { useEffect, useState } from "react";
+import Storelist from "@/components/Storelist"
 
-const myStyle = {
-    color: "red", 
-    fontSize:"40px"
-}
 
-const Productlist = () => {
+const Product = () => {
+
+    const [products , SetProducts] = useState([]);
+
+    useEffect ( () => {
+
+        const getProducts = async () => {
+            try{
+                const response = await axios.get('https://fakestoreapi.com/products')
+                console.log(response.data)
+                SetProducts(response.data);
+            } catch (error)
+            {
+                console.log(error);
+            }
+        }
+        getProducts();
+    },[])
+
     return (
-        <Layout
-        footer={`Made by me`}>
+        <Layout>
+            <Head>
+            <title>Product Page</title>
+            </Head>
+
             <div>
-              <div>
-                <img src="" alt="" />
-                <p>name</p>
-                <p>description</p>
-                <div>
-                    <small>Rs.</small>
-                    <strong>150</strong>
-                    <p>Rs. 50 off</p>    
-                </div>
-              </div>  
+                <Storelist store={products}/>
             </div>
         </Layout>
     )
 }
 
-export default Productlist;
+export default Product;
