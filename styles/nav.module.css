@@ -1,12 +1,13 @@
 .myNav{
     height: 70px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    background-color: #ffffff;
+    background-color: brown;
     position: sticky;
     top: 0;
     z-index: 1;
+    font-weight: 500;
     /* background: rgb(42, 161, 52); */
     padding: 20px;
 }

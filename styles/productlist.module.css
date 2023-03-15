@@ -14,3 +14,22 @@
     display: flex;
     flex: 1;
 } */
+
+
+@media (max-width: 1250px) {
+   .grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   } 
+}
+/* 
+@media (max-width: 450px) {
+    .grid{
+     display: grid;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+    } 
+ } */

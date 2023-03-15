@@ -8,11 +8,32 @@
     /* border: 5px solid blueviolet; */
 }
 
+.field{
+    border: 1px solid grey;
+    /* height: 40px; */
+    
+}
+
+.inputset{
+     border: 0px;
+}
+
+.inputset:focus{
+    outline: none;
+}
+
 .para1{
     font-size: 12px;
     font-style: bold;
     font-weight: 600;
+    margin-top: 25px;
     color: rgba(63, 104, 57, 0.781);
+}
+
+.bold{
+    font-weight: 500;
+    font-size:18px;
+    color: black;
 }
 
 .profile_content{
