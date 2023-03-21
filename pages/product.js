@@ -2,7 +2,8 @@ import Layout from "@/components/Layout";
 import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import Storelist from "@/components/Storelist"
+import Storelist from "@/components/Storelist";
+// import Link from "next/link";
 
 
 const Product = () => {
@@ -31,7 +32,7 @@ const Product = () => {
             </Head>
 
             <div>
-                <Storelist store={products}/>
+            <Storelist store={products}/>
             </div>
         </Layout>
     )

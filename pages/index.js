@@ -71,9 +71,12 @@ const Index = () => {
                             >WOW TRENDS AT WOW PRICES</h3>
                         <button style={
                             {color: "white",
-                             background:"blue",
-                             border: "1px solid blue",
-                             width:"20%",
+                             background:"grey",
+                             border: "1px solid grey",
+                             width:"100%",
+                             marginBottom:"10px",
+                             padding:"7px",
+                            
                             }}
                             >Shop Now</button>
                         </div>
@@ -90,6 +93,10 @@ const Index = () => {
                 display: flex;
 
                 justify-content: center;
+            }
+
+            button{
+                font-size: 25px;
             }
             .home_row2{
                 background: #0aaa1658;

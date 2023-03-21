@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard";
-import styles from "../styles/storelist.module.css"
+import styles from "../styles/storelist.module.css";
 
 const Storelist = ( {store} ) => {
     return(

@@ -1,25 +1,16 @@
 .productcard{
-    border: 1px solid rgb(197, 197, 197);
-    /* text-align:justify; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    height: 500px;
-    /* width: 80%; */
-    /* display: grid; */
-    background-color: rgb(197, 197, 197);
-    /* object-fit: contain; */
+    /* border: 1px solid rgb(197, 197, 197); */
+    /* background-color: rgb(197, 197, 197); */
     cursor: pointer;
     position: relative;
-    display: grid;
-    /* place-items:center; */
-}
+    margin-top: 10px;
+    margin-left: 10px;
+    }
 
 .cardimage{
-    /* margin: 15px; */
-    width: 211px;
-    height: 350px;
-    /* margin-bottom: 5px; */
-    /* line-height: 10%; */
+    width: 100%;
+    height: 300px;
+    /* object-fit: fill; */
 }
 .parap{
     line-height: 100%;
@@ -30,6 +21,7 @@
     text-transform: uppercase;
     color: #555;
     margin-bottom: 5px;
+    margin-top: 8px;
 }
 
 .title{
@@ -37,23 +29,20 @@
     margin-bottom: 0px;
 }
 
-/* .overlay{
-    object-fit: contain;
-    cursor: pointer;
-    position: relative;
-    display: grid;
-    place-items:center;
-} */
+.pricing{
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
 
 .button{
-    /* border: 1px solid olive; */
     width: 95%;
     padding: 5px; 
     margin-top: 200%;
     position: absolute;
-    /* top: 25; */
-    /* right: 25; */
-    background: #ffffff;
+    bottom: 3px;
+    background: #d9a90c;
     border-radius: 8px;
     border: 1px solid #ebebeb;
     /* opacity: 0; */
@@ -64,9 +53,6 @@
 }
 
 .productcard:hover > button {
-    /* opacity: 1; */
     display: block;
-    visibility: visible;
-    /* border-radius: 25px; */
-    /* background-color: aqua; */
+    /* visibility: visible; */
 }

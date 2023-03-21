@@ -1,38 +1,91 @@
-.myNav{
+ .myNav{
     height: 70px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: brown;
+    background-color: #131921;
     position: sticky;
     top: 0;
-    z-index: 1;
-    font-weight: 500;
-    /* background: rgb(42, 161, 52); */
-    padding: 20px;
-}
+    z-index: 100;
+   }
 
+   .myNav_search{
+    display: flex;
+    flex: 1;
+    padding: 8px;
+    margin: 12px;
+    align-items: center;
+    width: 60%;
+  }
+  
+  
+  .myNav_searchInput{
+    height: 25px;
+    padding: 5px;
+    border: none;
+    width: 100%;
+  }
+
+  .myNav_icon{
+    padding: 2px;
+    height: 25px !important;
+    background-color: greenyellow;
+  }
+
+  .myNav_iconBasket{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: small;
+    margin-right: 12px;
+    margin-bottom: 6px;
+    padding: 2px;
+  }
+
+  .myNav_home{
+    margin: 6px;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+
+/*
 .myNav_logo{
-  object-fit: contain;
-}
+    object-fit: contain;
+    width: 80px; 
+    position: fixed;
+    left: 0px;
+  }
+
+.myNav_ok{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
 .myNav_home{
-  object-fit: contain;
-}
+    margin-top: 23px;
+    margin-left: 45px;
+  }
 
 .myNav_search{
   display: flex;
   flex: 1;
-  /* align-items: center; */
-  justify-content: center;
-  /* border-radius: 5px; */
-  /* height: 25px; */
-  border: 1px solid grey;
-  background-color: #d9dadf;
-  /* padding: 10px; */
-  /* border: none; */
+  padding: 8px;
+  margin: 15px;
+  align-items: center;
+  width: 60%;
+}
+
+
+.myNav_searchInput{
+  height: 25px;
+  padding: 8px;
+  border: none;
   width: 100%;
 }
+
 
 .nav{
   display: flex;
@@ -40,21 +93,22 @@
   justify-content: space-evenly;
   margin-left: 10px;
   margin-right: 10px;
-
 }
-/* 
+
 .myNav_profile{
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
 }
+
+
 .myNav_cart{
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
-} */
+} 
 
 .dropdown {
     object-fit: contain;
@@ -74,9 +128,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: max-content;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
     width: 350px;
     max-height: 300px;
     padding: 10px;
@@ -101,15 +152,10 @@
     margin-bottom: 25px;
     color:rgb(226, 14, 155);
     font-weight: 600;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    /* gap: 6px; */
     font-family: inherit;
   }
   
   .menu > .firstChild{
-    /* display: block; */
     line-height: 40%;
     cursor: pointer;
     color: #696b79;
@@ -119,7 +165,8 @@
 
   .dropmenu:hover{
     font-weight: 600;
-    /* color: aqua; */
   }
 
-  
+   */
+
+   

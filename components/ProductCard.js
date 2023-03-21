@@ -8,7 +8,7 @@ const ProductCard = ({ image, price, category, title }) => {
             <p className={styles.categ}>{category} </p>
             <p className={styles.title}>{title}</p>
             </div>
-            <p><strong>$</strong>{price}</p>
+            <p className={styles.pricing}><strong>$</strong>{price}</p>
             {/* <div className={styles.overlay}> */}
                <button className={styles.button}> ♡ Wishlist</button> 
             {/* </div> */}
