@@ -4,6 +4,8 @@ import {  useState } from "react";
 import Link from "next/link";
 import { auth } from "./firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+// import { Router } from "next/router";
+// import { useRouter } from "next/router";
 // import AuthDetails from "@/components/AuthDetails";
 
 
@@ -16,15 +18,16 @@ const Profile = () => {
         try{
             e.preventDefault();
             const res =await signInWithEmailAndPassword(auth, email, password);
-            console.log(res);
+            // console.log(res);
             // .then((userAuthentication) => {
-                // console.log(userAuthentication);
+            // console.log(userAuthentication);
             // })
         }
         catch{(err) => {
             console.log(err.message);
         }
         }
+
         // e.preventDefault();
         // signInWithEmailAndPassword(auth, email, password)
         // .then((userAuthentication) => {
@@ -40,16 +43,17 @@ const Profile = () => {
         // .catch(error => alert(error.message))
     }
 
-    const signUp = (e) => {
+    const signUp = async (e) => {
+    try{
         e.preventDefault();
-        createUserWithEmailAndPassword(auth, email, password)
-        .then(() => {
-            console.log();
-        })
-        .catch((error) =>{
-            alert(error.message)
-        })
+        const resp = await createUserWithEmailAndPassword(auth, email, password)
+        console.log(resp);
     }
+    catch{ (err) =>{
+        console.log(err.message);
+    }
+    }
+}
 
     return(
         <div>
@@ -102,8 +106,13 @@ const Profile = () => {
         {/* <AuthDetails/> */}
 
         <p className={styles.para1}>By continuing, I agree to the 
-            <a href="/"><span className={styles.span_content}> Terms of use </span></a> &
-            <a href="/"> <span className={styles.span_content}>Privacy Policy </span></a>
+        
+            <Link href="/" legacyBehavior>
+                <a><span className={styles.span_content}> Terms of use </span></a>
+            </Link> &
+            <Link href="/" legacyBehavior>
+                <a> <span className={styles.span_content}>Privacy Policy </span></a>
+            </Link>
         </p>
             <button type='submit' 
                 onClick={signIn} className={styles.continue}>SignIn

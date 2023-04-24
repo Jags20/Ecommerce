@@ -1,6 +1,7 @@
 import { auth } from "@/pages/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
+// import { useRouter } from "next/router";
 
 
 const AuthDetails = () => {

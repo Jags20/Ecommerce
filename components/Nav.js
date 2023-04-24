@@ -5,8 +5,9 @@ import { Search, ShoppingBasket } from "@material-ui/icons";
 
 const Nav = () => {
 
-    const buttonClick= () =>{}
-
+    // const handleChange= (e) =>{
+    //     console.log("e.target.value");
+    // }
     
     return (
         <div className={styles.myNav}>
@@ -20,20 +21,31 @@ const Nav = () => {
                 <Link href="/" legacyBehavior>
                     <a className={styles.myNav_home}>Home</a>
                 </Link>
+
                 <Link href="/product" legacyBehavior>
                     <a className={styles.myNav_home}>Product</a>
                 </Link>
+                
                 <Link href="/product" legacyBehavior>
                     <a className={styles.myNav_home}>Items</a>
                 </Link>
             </div>
 
+            
+            
             <div className={styles.myNav_search}>
                 <input className={styles.myNav_searchInput}
                 placeholder="search the store" 
-                type="text"/>
+                type="text"
+                // onChange={handleChange}
+                // value={}
+                />
+                <a href="/error">
                 <Search className={styles.myNav_icon}/>
+                </a>
             </div>
+
+
 
             <div className={styles.myNav_rightTitle}>
                 <Link href='/profile' legacyBehavior>
