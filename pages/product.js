@@ -15,7 +15,7 @@ const Product = () => {
         const getProducts = async () => {
             try{
                 const response = await axios.get('https://fakestoreapi.com/products')
-                console.log(response.data)
+                // console.log(response.data)
                 SetProducts(response.data);
             } catch (error)
             {

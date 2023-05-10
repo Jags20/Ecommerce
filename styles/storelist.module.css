@@ -1,11 +1,23 @@
 .cardstyle{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
     grid-gap: 30px;
+    cursor: pointer;
+    position: relative;
     /* justify-content: center; */
     /* justify-items: center; */
     /* align-items: center; */
     /* align-content: center; */
     /* border: 1px solid blue; */
     /* grid-template-rows: 5fr; */
+}
+
+.button{
+    width: 80%;
+    padding: 5px;
+    background: #d9a90c;
+    margin-left: 1rem;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
 }

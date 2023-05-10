@@ -4,7 +4,8 @@ const descStyle = {
     color: "black",
     margin: "auto",
     textAlign: "center",
-    textDecoration: "none !important"
+    textDecoration: "none !important",
+    textTransform:"uppercase"
 }
 
 const Card = ({price, category, image}) => {

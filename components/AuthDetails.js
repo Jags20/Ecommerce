@@ -33,7 +33,7 @@ const AuthDetails = () => {
 
     const userSignOut = () =>{
         signOut(auth).then(() =>{
-            console.log("Sign out Sucessfully")
+            // console.log("Sign out Sucessfully")
         }).catch(error => console.log(error))
     }
 
@@ -44,7 +44,7 @@ const AuthDetails = () => {
                 <p className="para">{`Hello ${authUser.email.substring(0,3).toUpperCase()}`}</p>
                 <a onClick={userSignOut}>Sign out</a>
             </>:
-            <p>Signed out</p> }
+            <p></p> }
 
             <style jsx>{`
             p{
