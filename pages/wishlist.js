@@ -27,9 +27,7 @@ const Wishlist = () => {
   }
 
   const buy = ()  => {
-    return (!AuthDetails)?
-            router.push("/"):
-            router.push("/profile");
+            router.push("/checkout")
   }
 
 
