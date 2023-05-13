@@ -8,7 +8,7 @@ const descStyle = {
     textTransform:"uppercase"
 }
 
-const Card = ({price, category, image}) => {
+const Card = ({pri, cat, image}) => {
     return (
         <div className="card_list">
 
@@ -17,8 +17,8 @@ const Card = ({price, category, image}) => {
                 height='180px' width='180px'/>
                 <div>
                 <p className="product_title">
-                        <small style={descStyle}>{category}</small><br/>
-                        <strong>${price}</strong>
+                        <small style={descStyle}>{cat}</small><br/>
+                        <strong>${pri}</strong>
                     </p>
                 </div>
             </Link>

@@ -13,7 +13,6 @@ const ProductCard = ({ image, price, category, title }) => {
     //     dispatch(addToBasket(store));
     // }
 
-
     return(
         <div className={styles.productcard}>
             <img className={styles.cardimage} src={image} alt="product"/>

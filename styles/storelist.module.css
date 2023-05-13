@@ -13,11 +13,49 @@
 }
 
 .button{
+    display: none;
     width: 80%;
     padding: 5px;
     background: #d9a90c;
     margin-left: 1rem;
-    align-items: center;
-    border-radius: 8px;
+    /* align-items: center; */
+    border-radius: 18px;
     border: 1px solid #ebebeb;
+    color: white;
+    font-size: large;
+    font-weight: 600;
 }
+
+.card{
+    height: 60vh;
+    margin-bottom: 2rem;
+}
+.card:hover > button{
+    display: block;
+}
+
+.cartpopup{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 0;
+    right: 0;
+    top: 0;
+    width: 60%;
+    /* transform: translateY(-1%); */
+    z-index: 2;
+}
+.cartpopup_ch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 0;
+    right: 0;
+    top: 0;
+    width: 60%;
+    /* transform: translateY(-2%); */
+    z-index: 2;
+}
+

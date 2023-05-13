@@ -8,6 +8,7 @@
     /* margin-bottom: 12px; */
     /* left: 15px; */
 }
+
 .wishlist{
     background: rgb(224, 218, 218);
     
@@ -77,10 +78,11 @@
     border-color: rgb(233, 190, 48);
 }
 .product_img{
-    width: 35%;
+    width: 40%;
+    height: 35vh;
     margin-bottom: 15px;
     /* padding: 2px; */
-    margin-left: 4px;
+    margin-left: 14px;
 }
 
 .product_btn{

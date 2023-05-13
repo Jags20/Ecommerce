@@ -9,7 +9,7 @@ import Storelist from "@/components/Storelist";
 const Product = () => {
 
     const [products , SetProducts] = useState([]);
-
+//   console.log(products);
     useEffect ( () => {
 
         const getProducts = async () => {

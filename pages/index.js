@@ -55,7 +55,7 @@ const Index = () => {
                     width='100%'/>
 
                     <div className="home_row">
-                        <Productlist items={items} />
+                        <Productlist product={items} />
                     </div>
 
                     <div className="home_row2">
@@ -82,7 +82,7 @@ const Index = () => {
                             >Shop Now</button>
                         </div>
                         <div className="home_row">
-                        <Productlist items={items}/>
+                        <Productlist product={items}/>
                     </div>
 
                     </div>

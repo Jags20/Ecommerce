@@ -46,31 +46,8 @@
 
 .pricing_main{
     font-weight: 600;
-    font-size: 18px;
+    font-size: 25px;
     margin-right: 15px;
 }
 
 
-
-
-/* ask this how to make it work in storelist */
-.button{
-    width: 95%;
-    padding: 5px; 
-    margin-top: 200%;
-    position: absolute;
-    bottom: 3px;
-    background: #d9a90c;
-    border-radius: 8px;
-    border: 1px solid #ebebeb;
-    /* opacity: 0; */
-    display: none;
-    /* visibility: hidden; */
-    transition: 0.2s;
-    appearance: none;
-}
-
-.productcard:hover > button {
-    display: block;
-    /* visibility: visible; */
-}

@@ -42,7 +42,7 @@ const Wishlist = () => {
             vintage-1266412_960_720.jpg" alt="banner"/>
 
             <div className={styles.cart}>
-            <p>Subtotal ({items.length} items):</p>
+            <p>Subtotal <strong>({items.length} items):</strong> </p>
             <Subtotal/>
             <small>
             <input type="checkbox" />
@@ -54,6 +54,7 @@ const Wishlist = () => {
           <div className={styles.main}>
             <div className={styles.basket}>
             <h2 className={styles.heading}>Your Shopping Basket</h2>
+            <button className={styles.product_btn} onClick={ () => router.push("/product")}>Continue Shopping</button>
             <button onClick={() => clearCart()} className={styles.btnn}>Clear cart</button>
             </div>
             <hr/>
@@ -74,7 +75,8 @@ const Wishlist = () => {
 
                     </div>
                     <button className={styles.product_btn} onClick={ () => delUser(id)}>
-                      Remove</button>
+                      Remove
+                    </button>
                     </div>
                   </div>
                 );
