@@ -23,6 +23,7 @@ const Index = () => {
 
         }
         getItems();
+        // geting data using fetch method
         // const data = 
         // fetch('https://fakestoreapi.com/products')
         //     .then(res=>res.json())
@@ -37,6 +38,8 @@ const Index = () => {
     return(
         <Layout 
         // footer={`Copyright ${new Date().getFullYear() }`}
+        // mainTitle={`hello brother`}
+        
         >
             <Head>
                 <title>Home</title>
@@ -88,7 +91,7 @@ const Index = () => {
                     </div>
 
                 </div>
-
+            {/* scoped css */}
             <style jsx>{`
             .home_row{
                 display: flex;
@@ -103,28 +106,6 @@ const Index = () => {
                 background: #0aaa1658;
                 
             }`}</style>
-            {/* <h1>Hello! world</h1>
-            <h6>My name is pal. <br/>
-                <span className="fds"> My favourite game is you </span>
-            </h6> */}
-            {/* <Link href="/product" legacyBehavior>
-                <a> Product </a>
-            </Link> */}
-            {/* <p> Hey Whats up guys, Im <span className="p1">new to react </span> as well as next
-                .Hope you guys ignore my mistakes.
-            </p> */}
-
-        {/* Scoped Css
-            <style jsx>{`
-            p{
-                color: red;
-                fontSize: 40px;
-            }
-            .p1{
-                color: green;
-            }
-            `}
-            </style> */}
         </Layout>
     )
 }

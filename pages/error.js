@@ -6,6 +6,7 @@ const error = () => {
             <Nav/>
             <h1>Error! 404 page not found.</h1>
             <Footer/>
+            {/* scoped css */}
             <style jsx>{`
             h1
             {display:flex;

@@ -3,24 +3,24 @@ import styles from "../styles/storelist.module.css";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "@/store/slices/basketSlice";
 // import { useRouter } from "next/router";
-import CartPopup from "./CartPopup";
+// import CartPopup from "./CartPopup";
 import { useState } from "react";
+import Modal from "./Modal";
+// import Overlay from "./Overlay";
 
 const Storelist = ( {store} ) => {
 
-    const [popup , setPopup] = useState(false);
-// console.log(store);
-    // const router = useRouter();
+    const [isOpen , setIsOpen] = useState(false);
+
     const dispatch = useDispatch();
 
     const addToCart = (user) => {
         dispatch(addToBasket(user));
-        // router.push("/wishlist");
-        
     }
-    const pop = () => {
-        setPopup(!popup)
-    }
+
+    // const modal = () => {
+    //     setIsOpen(true)
+    // }
 
     return(
         <div className={styles.cardstyle}>
@@ -29,30 +29,26 @@ const Storelist = ( {store} ) => {
                         // console.log(arr);
                     return(
                         <div key={i} className={styles.card}>
-                        <ProductCard
-                        key={i}
-                        id={user.id}
-                        image={user.image}
-                        title={user.title}
-                        category={user.category}
-                        price={user.price}
-                        />
-                        <button className={styles.button} onClick={() => {
-                            addToCart(user);
-                            pop();
-                        } }>
-                            Add To Cart
-                        </button>
-                        </div>
+                            <ProductCard
+                            key={i}
+                            id={user.id}
+                            image={user.image}
+                            title={user.title}
+                            category={user.category}
+                            price={user.price}
+                            />
+                            <button className={styles.button} onClick={() => {
+                                addToCart(user);
+                                // modal();
+                                setIsOpen(true);
+                            } }>
+                                Add To Cart
+                            </button>
+                        </div>  
                     );
-                }) }
-                
-            <div className={
-                popup ? styles ['cartpopup_ch']: styles ["cartpopup"]
-            }>
-                <CartPopup className={styles.cartpopup_sub}/>
-            </div>
-
+                }) 
+            }
+            {isOpen && <Modal setIsOpen={setIsOpen} />}
         </div>
     )
 }

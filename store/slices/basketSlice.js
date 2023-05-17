@@ -6,6 +6,7 @@ const basketSlice = createSlice({
     reducers: {
         // what action do we need in our app
         addToBasket(state,action) {
+          // let payload = action.payload;
           state.push(action.payload);
         },
         removeFromBasket(state,action) {

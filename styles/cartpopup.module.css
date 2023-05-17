@@ -1,11 +1,40 @@
 .popup_main{
     background: rgb(184, 180, 180);
+    position: relative;
+    z-index: 9;
     /* height: 100vh; */
+}
+
+.popup_main_res{
+  display: none;
+  background: rgb(184, 180, 180);
+  position: relative;
+  z-index: 9;
+}
+
+.popup_head{
+  display: flex;
+  justify-content: space-between;
+  background: rgb(184, 180, 180);
+  margin: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.icon{
+  scale: 1.1;
+  color: black;
+  font-weight: 700;
+  margin: 1rem;
+  border: 1px solid white;
+  background: white;
 }
 
 .popup_card{
     display: flex;
-    margin: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
     background-color: white;
 }
 

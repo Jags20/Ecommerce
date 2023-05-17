@@ -1,11 +1,9 @@
 import Layout from "@/components/Layout";
-// import WishlistProduct from "@/components/WishlistProduct";
 import styles from "@/styles/wishlist.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromBasket, clearAllUser } from "@/store/slices/basketSlice";
 import Subtotal from "@/components/Subtotal";
 import { useRouter } from "next/router";
-import AuthDetails from "@/components/AuthDetails";
 
 const Wishlist = () => {
 
@@ -57,9 +55,9 @@ const Wishlist = () => {
             </div>
             <hr/>
             {
-              items.map((user, id) => {
+              items.map((user, i) => {
                 return(
-                  <div key={id} className={styles.sub}>
+                  <div key={i} className={styles.sub}>
                     <img src={user.image} className={styles.product_img} alt="hujko"/>
                     <div className={styles.sub1}>
                       <div className={styles.para}>
@@ -72,7 +70,8 @@ const Wishlist = () => {
                     
 
                     </div>
-                    <button className={styles.product_btn} onClick={ () => delUser(id)}>
+                    {/* <CartPopup/> */}
+                    <button className={styles.product_btn} onClick={ () => delUser(i)}>
                       Remove
                     </button>
                     </div>

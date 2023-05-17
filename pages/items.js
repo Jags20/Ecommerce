@@ -5,7 +5,7 @@ const Items = () => {
         <Layout 
         // mainTitle={`here it is`}
         >
-            {/* <h1>see you soon, love u forever</h1> */}
+            {/* <h1>hii</h1> */}
         </Layout>
     )
 }

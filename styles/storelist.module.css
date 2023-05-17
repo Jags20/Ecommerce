@@ -4,6 +4,8 @@
     grid-gap: 30px;
     cursor: pointer;
     position: relative;
+    /* margin: 0; */
+    /* z-index: 1; */
     /* justify-content: center; */
     /* justify-items: center; */
     /* align-items: center; */
@@ -14,10 +16,10 @@
 
 .button{
     display: none;
-    width: 80%;
+    width: 65%;
     padding: 5px;
     background: #d9a90c;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     /* align-items: center; */
     border-radius: 18px;
     border: 1px solid #ebebeb;
@@ -34,28 +36,4 @@
     display: block;
 }
 
-.cartpopup{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    margin-top: 0;
-    right: 0;
-    top: 0;
-    width: 60%;
-    /* transform: translateY(-1%); */
-    z-index: 2;
-}
-.cartpopup_ch{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    margin-top: 0;
-    right: 0;
-    top: 0;
-    width: 60%;
-    /* transform: translateY(-2%); */
-    z-index: 2;
-}
 

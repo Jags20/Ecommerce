@@ -20,37 +20,19 @@ const Profile = () => {
             e.preventDefault();
             const res =await signInWithEmailAndPassword(auth, email, password);
            router.push("/");
-            
-            // console.log(res);
-            // .then((userAuthentication) => {
-            // console.log(userAuthentication);
-            // })
         }
         catch{(err) => {
             console.log(err.message);
         }
         }
-
-        // e.preventDefault();
-        // signInWithEmailAndPassword(auth, email, password)
-        // .then((userAuthentication) => {
-        //     console.log(userAuthentication);
-        // })
-        // .catch((error) =>{
-        //     alert(error.message)
-        // })
-        // auth.signInWithEmailAndPassword(email,password)
-        // .then(auth  =>{
-        //     <Link href="/"></Link>
-        // })
-        // .catch(error => alert(error.message))
     }
 
     const signUp = async (e) => {
     try{
         e.preventDefault();
         const resp = await createUserWithEmailAndPassword(auth, email, password)
-        console.log(resp);
+        // console.log(resp);
+        router.push('/');
     }
     catch{ (err) =>{
         console.log(err.message);

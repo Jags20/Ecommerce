@@ -1,0 +1,137 @@
+.overlay{
+    background-color: rgba(128, 128, 128, 0.8);
+    width: 100%;
+    height: 100%;
+    /* z-index: 0; */
+    position: absolute;
+    /* top: 0; */
+   
+}
+
+.modal_main{
+    background: rgb(184, 180, 180);
+    position: fixed;
+    height: 95%;
+    overflow-y: auto;
+    margin-top: 3rem;
+    right: 0;
+    top: 0;
+    width: 60%;
+    /* transform: translateY(-2%); */
+    /* z-index: 3; */
+}
+
+.modal_head{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(184, 180, 180);
+    margin: 1rem;
+    position: sticky;
+    top: 0;
+  }
+  
+.icon{
+    margin: 1rem;
+    border:none;
+    /* background: white; */
+  }
+
+.heading{
+    margin-top: 1rem;
+  }
+  
+.modal_card{
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+.modal_img{
+    margin: 0.8rem;
+}
+
+.modal_el{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_para{
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.modal_title{
+    margin-bottom: 0;
+}
+  
+.modal_price{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.modal_quantity{
+    margin-bottom: 10px;
+    width: 40%;
+    margin-left:1.1rem ;
+    border: 1px solid black;
+}
+  
+.modal_dec{
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    width: 30%;
+    text-decoration: none;
+    margin: 22px;
+    color: black;
+}
+
+.modal_input{
+    width: 20%;
+    font-weight: 800;
+    text-align: center;
+    border: none;
+}
+  
+.modal_incr{
+    font-size: 25px;
+    text-decoration: none;
+    width: 30%;
+    margin: 8px;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+  
+.modal_remove{
+    font-size: 1.3rem;
+    width: 60%;
+    margin-left: 1.1rem;
+    margin-top: 1.5rem;
+    background-color: rgb(224, 170, 21);
+    border: rgb(224,170,21);
+    color: white;
+    border-radius: 7%;  
+}
+
+.modal_cart{
+    padding: 18px;
+    background: rgb(184, 180, 180);
+    width: 100%;
+}
+
+
+
+.modal_btn_buy{
+  margin-top: 0.3rem;
+  background-color: rgb(224, 170, 21);
+  border-color:rgb(224, 170, 21) ;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 7%;
+  padding: 4px;
+  width:15rem;
+}
