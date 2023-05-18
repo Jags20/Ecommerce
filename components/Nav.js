@@ -76,6 +76,8 @@ const Nav = () => {
 
             <div className={styles.myNav_rightTitle}>
                 <Link href='/profile' legacyBehavior>
+                    {/* two classname */}
+                    {/* className={`${styles["card"]} ${styles["grid"]}`} */}
                     <a className={styles.myNav_home1} >Profile</a>
                 </Link>
 

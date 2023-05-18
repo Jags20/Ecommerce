@@ -3,6 +3,7 @@ import Head from "next/head";
 import Productlist from "@/components/Productlist";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 
 const Index = () => {
@@ -73,16 +74,19 @@ const Index = () => {
                             textAlign:"center"
                             }}
                             >WOW TRENDS AT WOW PRICES</h3>
-                        <button style={
-                            {color: "white",
-                             background:"grey",
-                             border: "1px solid grey",
-                             width:"100%",
-                             marginBottom:"10px",
-                             padding:"7px",
-                            
-                            }}
-                            >Shop Now</button>
+                        <Link href="/product">    
+                            <button style={
+                                {color: "white",
+                                background:"grey",
+                                border: "1px solid grey",
+                                width:"100%",
+                                marginBottom:"10px",
+                                padding:"7px",
+                                
+                                }}
+                            >Shop Now
+                            </button>
+                        </Link>
                         </div>
                         <div className="home_row">
                         <Productlist product={items}/>

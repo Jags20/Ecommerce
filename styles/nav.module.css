@@ -2,7 +2,7 @@
     /* height: 70px; */
     display: flex;
     align-items: center;
-    background-color: #131921;
+    background-color: #7a7c7e;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -12,6 +12,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+   }
+
+   .myNav_logo{
+    border-radius: 50%;
+    margin-left: 0.4rem;
    }
 
    /* .check{
@@ -39,7 +44,8 @@
   .myNav_icon{
     padding: 2px;
     height: 25px !important;
-    background-color: rgb(130, 201, 25);
+    background-color: rgb(185, 189, 180);
+    color: black;
   }
 
   .myNav_count{
@@ -95,6 +101,10 @@
   }
 
   .myNav_home:hover{
+    background-color: #555;
+  }
+
+  .myNav_home1:hover{
     background-color: #555;
   }
 

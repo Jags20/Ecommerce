@@ -1,12 +1,23 @@
 import React from "react";
 import Layout from "../components/Layout";
 import styles from "@/styles/checkout.module.css";
-// import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const checkout = () => {
 
-    // let router = useRouter();
+    const router = useRouter();
+
+    const handlePlaceOrder = () => {
+        const fnameValue = document.querySelector(`input[name='fname']`).value;
+        // const lnameValue = document.querySelector(`input[name="Lastname"]`).value;
+        // const stateValue = document.querySelector(`select[name="state"]`).value;
+        // const paymentValue = document.querySelector(`select[name="payment"]`).value;
+
+        router.push(`/final?fname=${fnameValue}`);
+        // router.push(`/final?fname=${fnameValue}&lname=${lnameValue}&state=${stateValue}&payment=${paymentValue}`);
+
+    };
 
     return(
         <Layout>
@@ -53,7 +64,7 @@ const checkout = () => {
                             <option value="Cod">Cod</option>
                         </select> <br/>
                         <Link href="/final">
-                        <button className={styles.checkout_button}>Place Order</button>
+                        <button className={styles.checkout_button} onClick={handlePlaceOrder}>Place Order</button>
                         </Link>
                     </form>
                 </div>

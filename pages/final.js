@@ -1,8 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import Layout from "@/components/Layout";
+import { useRouter } from "next/router";
 
 const Final = () => {
+
+    const router = useRouter();
+    console.log(router);
+    const { query } = router;
+    const fname = query.fname;
+    // const lname = query.lname;
+    // const state = query.state;
+    // const payment = query.payment;
 
     let OrderNo = Math.random();
 
@@ -21,7 +30,7 @@ const Final = () => {
                 {display:"flex",
                 margin:"3rem"
                 }
-            }>🎉Thanks For ordering with us.🎉</h1>
+            }>🎉Thanks {fname} For Supporting us.🎉</h1>
             <div style={
                 {
                     margin:"1.75rem"

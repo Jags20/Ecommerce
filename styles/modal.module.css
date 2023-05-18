@@ -29,12 +29,28 @@
     position: sticky;
     top: 0;
   }
+
+.iconButton{
+    margin-top: 2rem;
+    border: none;
+    color: black;
+    transform: translateY(-30%);
+    background-color: rgb(184, 180, 180) 
+}
   
 .icon{
-    margin: 1rem;
     border:none;
-    /* background: white; */
+    scale: 1.3;
   }
+
+.iconButton:hover{
+    box-shadow: 0 10px 20px -10px rgba(217, 169, 12, 0.6);
+    transform: translateY(-5px);
+    scale:1.3;
+    background: #d9a90c;
+    color: white;
+
+}
 
 .heading{
     margin-top: 1rem;
@@ -74,7 +90,7 @@
 
 .modal_quantity{
     margin-bottom: 10px;
-    width: 40%;
+    width: 128px;
     margin-left:1.1rem ;
     border: 1px solid black;
 }
@@ -88,6 +104,7 @@
     margin: 22px;
     color: black;
 }
+
 
 .modal_input{
     width: 20%;
@@ -108,7 +125,7 @@
   
 .modal_remove{
     font-size: 1.3rem;
-    width: 60%;
+    width: 180px;
     margin-left: 1.1rem;
     margin-top: 1.5rem;
     background-color: rgb(224, 170, 21);
@@ -117,17 +134,44 @@
     border-radius: 7%;  
 }
 
+.modal_remove:hover{
+    box-shadow: 0 10px 20px -10px rgba(217, 169, 12, 0.6);
+    /* transform: translateY(-5px); */
+    scale:1.1;
+    background: #d9a90c;
+}
+
 .modal_cart{
     padding: 18px;
     background: rgb(184, 180, 180);
     width: 100%;
 }
 
+.modal_innerCart{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
 
+.modal_clear{
+    font-size: 1.1rem;
+    margin-left: 1.1rem;
+    background-color: rgb(224, 170, 21);
+    border: rgb(224,170,21);
+    color: white;
+    border-radius: 17%; 
+}
+
+.modal_clear:hover{
+    box-shadow: 0 10px 20px -10px rgba(217, 169, 12, 0.6);
+    transform: translateY(-5px);
+    background: #d9a90c;
+}
 
 .modal_btn_buy{
   margin-top: 0.3rem;
   background-color: rgb(224, 170, 21);
+  border: none;
   border-color:rgb(224, 170, 21) ;
   color: white;
   font-size: 1.3rem;
@@ -135,3 +179,23 @@
   padding: 4px;
   width:15rem;
 }
+
+.modal_btn_buy:hover{
+    box-shadow: 0 10px 20px -10px rgba(217, 169, 12, 0.6);
+    /* transform: translateY(-5px); */
+    scale:1.1;
+    background: #d9a90c;
+}
+
+@media screen and (min-width:1095px) {
+    .modal_main{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width:926px) {
+    .modal_main{
+        width: 90vw;
+    }
+}
+

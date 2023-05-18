@@ -45,8 +45,8 @@ const Modal = ( {setIsOpen}) => {
             <div className={styles.modal_main}>
                 <div className={styles.modal_head}>
                     <h1 className={styles.heading}>Your Shopping Basket</h1>
-                    <button onClick={() => clearUser()}>ClearAll</button>
-                    <button onClick={ () => setIsOpen(false)}>
+                    {/* <button onClick={() => clearUser()}>ClearAll</button> */}
+                    <button className={styles.iconButton} onClick={ () => setIsOpen(false)}>
                     <Close className={styles.icon}/>
                     </button>
                 </div>
@@ -63,12 +63,12 @@ const Modal = ( {setIsOpen}) => {
 
                             <div className={styles.modal_quantity}>
                                 <a className={styles.modal_dec} title="decrease" onClick={ () => decrement(user.id)}>
-                                    <span> - </span>
+                                    <span className={styles.modal_quant}> - </span>
                                 </a>
 
                                 <input name="quantity" type="text" value={quantChange[user.id] || 1} className={styles.modal_input}/>
                                 <a className={styles.modal_incr} title="increase" onClick={ () => increment(user.id)}>
-                                    <span> + </span>
+                                    <span className={styles.modal_quant}> + </span>
                                 </a>
                             </div>
 
@@ -81,13 +81,16 @@ const Modal = ( {setIsOpen}) => {
                 })
                 }
                 <div className={styles.modal_cart}>
-                    <div style={{
-                        marginLeft:"1rem",
-                    }}>
-                        <p style={{
-                            marginBottom:"0"
-                        }}>Subtotal <strong>({items.length} items):</strong> </p>
-                        <Subtotal />
+                    <div className={styles.modal_innerCart}>
+                        <div>
+                            <p style={{
+                                marginBottom:"0"
+                            }}>Subtotal <strong>({items.length} items):</strong> </p>
+                            <Subtotal />
+                        </div>
+                        <div>
+                            <button className={styles.modal_clear} onClick={() => clearUser()}>Clear All</button>
+                        </div>
                     </div>
                     <small style={{
                         fontSize:"0.7rem",

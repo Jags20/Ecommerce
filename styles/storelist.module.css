@@ -28,6 +28,12 @@
     font-weight: 600;
 }
 
+.button:hover{
+    box-shadow: 0 10px 20px -10px rgba(217, 169, 12, 0.6);
+    transform: translateY(-5px);
+    background: #d9a90c;
+}
+
 .card{
     height: 60vh;
     margin-bottom: 2rem;

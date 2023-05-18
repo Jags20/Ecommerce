@@ -50,8 +50,8 @@ const Wishlist = () => {
           <div className={styles.main}>
             <div className={styles.basket}>
             <h2 className={styles.heading}>Your Shopping Basket</h2>
-            <button className={styles.product_btn} onClick={ () => router.push("/product")}>Continue Shopping</button>
-            <button onClick={() => clearCart()} className={styles.btnn}>Clear cart</button>
+            <button className={styles.product_btn_shop} onClick={ () => router.push("/product")}>Continue Shopping</button>
+            {/* <button onClick={() => clearCart()} className={styles.btnn}>Clear cart</button> */}
             </div>
             <hr/>
             {
