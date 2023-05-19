@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import styles from "@/styles/profile.module.css";
 import { useState } from "react";
 import Link from "next/link";
-import { auth } from "./firebase";
+import  auth  from "./firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 // import { Router } from "next/router";
 import { useRouter } from "next/router";
