@@ -2,7 +2,12 @@ import React  from "react";
 import Link from "next/link";
 import styles from "../styles/nav.module.css"
 import AuthDetails from "./AuthDetails";
-import { Close, Menu, Search, ShoppingBasket } from "@material-ui/icons";
+// import { Close, Menu, Search, ShoppingBasket } from "@material-ui/icons";
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { useSelector } from "react-redux";
 import { useState } from "react";
 
@@ -51,8 +56,8 @@ const Nav = () => {
                     <a className={styles.toggle_btn} onClick={() => handleMenuClick()}>
                         {/* menu is true then close icon is visible */}
                         {menu ?
-                         <Close className={styles.icon} /> : 
-                         <Menu className={styles.icon} />}
+                         <CloseIcon className={styles.icon} /> : 
+                         <MenuIcon className={styles.icon} />}
                     </a>
                 </div>
 
@@ -68,7 +73,7 @@ const Nav = () => {
                 type="text"
                 />
                 <Link href="/error">
-                <Search className={styles.myNav_icon}/>
+                <SearchIcon className={styles.myNav_icon}/>
                 </Link>
             </div>
 
@@ -83,7 +88,7 @@ const Nav = () => {
 
                 <Link href='/wishlist' legacyBehavior>
                     {/* <a className={styles.myNav_home}>Cart */}
-                    <ShoppingBasket className={styles.myNav_iconBasket}/>
+                    <ShoppingBasketIcon className={styles.myNav_iconBasket} />
                      {/* </a> */}
                 </Link>
                

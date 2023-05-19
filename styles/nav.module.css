@@ -59,10 +59,8 @@
   }
 
   .myNav_iconBasket{
-    display: flex;
-    align-items: center;
     color: white;
-    font-size: small;
+    font-size:1.8rem;
     /* margin-right: 12px; */
     margin-bottom: 6px;
     padding: 2px;

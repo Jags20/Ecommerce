@@ -1,4 +1,6 @@
-import { Close } from "@material-ui/icons";
+// import { Close } from "@material-ui/icons";
+import CloseIcon from '@mui/icons-material/Close';
+// import { CloseReason } from '@mui/material';
 import styles from "@/styles/modal.module.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -47,7 +49,7 @@ const Modal = ( {setIsOpen}) => {
                     <h1 className={styles.heading}>Your Shopping Basket</h1>
                     {/* <button onClick={() => clearUser()}>ClearAll</button> */}
                     <button className={styles.iconButton} onClick={ () => setIsOpen(false)}>
-                    <Close className={styles.icon}/>
+                    <CloseIcon className={styles.icon}/>
                     </button>
                 </div>
 
