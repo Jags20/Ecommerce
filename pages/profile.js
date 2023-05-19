@@ -48,9 +48,10 @@ const Profile = () => {
         <div className={styles.profile}> 
             <div className={styles.profile_content}>
                 <div className={styles.nova}>
-                    <img className={styles.logo} src="https://media.istockphoto.com/id/1303004294/vector/free-shipping-red-label-free-shipping-banner-template-vector-design.jpg?s=612x612&w=0&k=20&c=GnhelWcF554-Z_lTrbgDbHT6hiPQ3seYYt6paDgAoBM=" alt="logo"
+                    {/* <div className={styles.logo}> 
+                    // src="https://media.istockphoto.com/id/1303004294/vector/free-shipping-red-label-free-shipping-banner-template-vector-design.jpg?s=612x612&w=0&k=20&c=GnhelWcF554-Z_lTrbgDbHT6hiPQ3seYYt6paDgAoBM=" alt="logo"
                     // height={136} width={300}
-                    />
+                     </div>*/}
                     <p className={styles.para1}> <strong className={styles.bold} >Login</strong> or <strong className={styles.bold} >Signup</strong></p>
                     <div>
                     <form onSubmit={signIn}>

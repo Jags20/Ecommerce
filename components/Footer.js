@@ -1,4 +1,8 @@
-import styles from "../styles/footer.module.css"
+import styles from "../styles/footer.module.css";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
     return(
@@ -43,22 +47,18 @@ const Footer = () => {
             </div>
 
             <div className={styles.imgSec}>
-                <h6><strong>Experience App on Mobile</strong></h6>
+                {/* <h6><strong>Experience App on Mobile</strong></h6>
                 <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                 alt="logo"  width='50%'/>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
-                alt="logo"  width='50%'/>
+                alt="logo"  width='50%'/> */}
 
                 <p><strong>Keep in Touch</strong></p>
                 <div className={styles.logos}>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSfS-tpWGpvdVrikQlmEYxOkyT79cW1-bQ_Z0nLKEs&s"
-                alt="fb"/>
-                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1dCP0Cx71DYQS94heQUSvtZRoOO_9VOFtYBfsGIQ&s'
-                alt="twitt"/>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRucyRIc2aRved9xFWU-pMUh0DCX6tRTo73AjYFbgX4&s"
-                alt="youtube"/>
-                <img src="https://simg.nicepng.com/png/small/1011-10110672_logo-instagram-logo-instagram-hitam-putih-png-logo.png"
-                alt="insta" />
+                    <FacebookIcon/>
+                    <TwitterIcon/>
+                    <YouTubeIcon/>
+                    <InstagramIcon/>
                 </div>
 
             </div>

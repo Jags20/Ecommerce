@@ -34,8 +34,12 @@ const Wishlist = () => {
           {/* <WishlistProduct/>          */}
           <div className={styles.wishlist}>
           <div className={styles.list}>
-            <img className={styles.banner} src="https://cdn.pixabay.com/photo/2016/03/19/09/42/
-            vintage-1266412_960_720.jpg" alt="banner"/>
+            <div className={styles.banner}>
+              <h1>Never settle for less</h1>
+              <h2>Thrill is waiting for you</h2>
+            </div>
+            {/* <img className={styles.banner} src="https://cdn.pixabay.com/photo/2016/03/19/09/42/
+            vintage-1266412_960_720.jpg" alt="banner"/> */}
 
             <div className={styles.cart}>
             <p>Subtotal <strong>({items.length} items):</strong> </p>
