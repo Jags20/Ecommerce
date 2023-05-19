@@ -4,6 +4,7 @@ import Productlist from "@/components/Productlist";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const Index = () => {
@@ -46,17 +47,17 @@ const Index = () => {
                 <title>Home</title>
             </Head>
                 <div className="home">
-                    <img className="home_image" 
+                    {/* <Image className="home_image" 
                     src="https://i.pinimg.com/originals/3b/f5/32/3bf5329387752da6456bdedd46351689.jpg"
                     alt="banner"
-                    height="180px"
-                    width='100%'/>
+                    height={180}
+                    width={1000}/>
 
-                    <img className="home_offer" 
+                    <Image className="home_offer" 
                     src="https://brxcdn.com/plt-app-storage/c873bada-b26b-11eb-a00b-0e95affb47f1/media/original/38e9b236-8c47-11ed-a618-fee145427408"
                     alt="banner"
-                    height="180px"
-                    width='100%'/>
+                    height={180}
+                    width={1000}/> */}
 
                     <div className="home_row">
                         <Productlist product={items} />
