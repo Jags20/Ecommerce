@@ -10,6 +10,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import Image from "next/image";
 
 const Nav = () => {
 
@@ -28,6 +29,8 @@ const Nav = () => {
         <div className={styles.myNav}>
             <div className={styles.toggle}>
                 <Link href="/">
+                    {/* <Image className={styles.myNav_logo} src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png"
+                alt="logo" width="70" height="50"/> */}
                 <img className={styles.myNav_logo} src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png"
                 alt="logo" width="70px"/>
                 </Link>
