@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const descStyle = {
     color: "black",
@@ -13,8 +14,9 @@ const Card = ({pri, cat, image}) => {
         <div className="card_list">
 
             <Link href="/product">
-                <img src = {image} alt="prod"
-                height='180px' width='180px'/>
+                <Image src={image} alt="prod" height={180} width={180}/>
+                {/* <img src = {image} alt="prod" */}
+                {/* height='180px' width='180px'/> */}
                 <div>
                 <p className="product_title">
                         <small style={descStyle}>{cat}</small><br/>

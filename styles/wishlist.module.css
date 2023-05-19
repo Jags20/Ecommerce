@@ -4,7 +4,9 @@
     width: 60%;
     /* margin-right: 25px; */
     position: relative;
-    left: 8px;
+    /* left: 2px; */
+    top: 0;
+    transform: translateY(-7%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -15,14 +17,6 @@
     background: linear-gradient(to right, rgb(168, 255, 5), rgb(222, 84, 84));
     /* margin-bottom: 12px; */
     /* left: 15px; */
-}
-
-.wishlist{
-    background: rgb(224, 218, 218);
-    
-    /* height: 100vh; */
-    /* display: flex; */
-
 }
 
 .main{
