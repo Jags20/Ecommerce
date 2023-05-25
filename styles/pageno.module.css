@@ -1,0 +1,78 @@
+.heading{
+    margin: 1rem;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+}
+
+.main_pic{
+    margin: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.main_pic:hover{
+    scale: 1.1;
+    transition: 1s ease-in-out;
+}
+
+.main_detail{
+    margin: 2rem;
+    padding: 1rem;
+}
+.main_3{
+    width: 25%;
+}
+
+.category{
+    color: rgb(206, 203, 203);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.main_price{
+    display: flex;
+}
+
+.price{
+    margin-right: 1rem;
+    color: grey;
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.price_discount{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.main_button{
+    width: 80%;
+    padding: 0.4rem;
+    font-weight: 400;
+    background-color:rgb(224,170,21);
+    border: rgb(224, 170, 21);
+    color: white;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.main_button:hover{
+    scale: 1.1;
+    transition: 1s ease-in-out;
+}
+
+@media screen and (max-width:890px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_button{
+        width: 100%;
+    }
+}

@@ -1,11 +1,12 @@
 // import { useState } from "react";
 import styles from "../styles/productcard.module.css";
 import Image from "next/image";
+import Link from "next/link";
 // import { useDispatch } from "react-redux";
 // import { addToBasket } from "@/store/slices/basketSlice";
 
 
-const ProductCard = ({ image, price, category, title }) => {
+const ProductCard = ({ image, price, category, title, id }) => {
    
     // const dispatch = useDispatch();
 
@@ -16,7 +17,9 @@ const ProductCard = ({ image, price, category, title }) => {
 
     return(
         <div className={styles.productcard}>
+            <Link href={`/products/${id}`}>
             <Image src={image} height={200} width={200} alt="product" className={styles.cardimage}/>
+            </Link>
             {/* <img className={styles.cardimage} src={image} alt="product"/> */}
             <div className={styles.parap}>
             <p className={styles.categ}>{category} </p>

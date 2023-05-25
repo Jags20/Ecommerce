@@ -15,18 +15,19 @@ const Card = ({pri, cat, image}) => {
 
             <Link href="/product">
                 <Image src={image} alt="prod" height={180} width={180}/>
+            </Link>
                 {/* <img src = {image} alt="prod" */}
                 {/* height='180px' width='180px'/> */}
-                <div>
-                <p className="product_title">
+                <div>        
+                    <p className="product_title">
                         <small style={descStyle}>{cat}</small><br/>
-                        <strong>${pri}</strong>
-                    </p>
+                        {/* <strong>${pri}</strong> */}
+                    </p>    
                 </div>
-            </Link>
+            
 
             <style jsx>{`
-            img{
+            Image{
                 display: flex;
                 justify-content: center;
                 margin:auto;

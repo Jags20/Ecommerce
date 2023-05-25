@@ -31,38 +31,55 @@
     margin: 12px;
     align-items: center;
     width: 60%;
+    height: 32px;
+    background-color: white;
+    border-radius: 25px;
+    /* object-fit: fill; */
   }
   
   
   .myNav_searchInput{
-    height: 25px;
+    height: 30px;
     padding: 5px;
     border: none;
+    outline: none;
     width: 100%;
     cursor: pointer;
+    border-radius: 20px; /* Adjust the value to increase or decrease the curve */
+    padding: 10px; 
+  }
+
+  .search_sep{
+    color: #7a7c7e;
+    font-weight: 300;
   }
 
   .myNav_icon{
     padding: 2px;
-    height: 25px !important;
-    background-color: rgb(185, 189, 180);
+    height: 30px !important;
+    background-color: white;
     color: black;
+    border-radius: 20px;
+    /* scale: 1.2;  */
   }
 
   .myNav_count{
     color: white;
     text-decoration: none;
     font-weight: 700;
+    margin-top: 0.9rem;
+    margin-right: 0.3rem;
   }
 
   .myNav_rightTitle{
+    display: flex;
     margin-right: 12px;
   }
 
   .myNav_iconBasket{
     color: white;
     font-size:1.8rem;
-    /* margin-right: 12px; */
+    margin-top: 0.6rem;
     margin-bottom: 6px;
     padding: 2px;
     cursor: pointer;
@@ -86,7 +103,7 @@
 
   .toggle_btn{
     position: absolute;
-    top: 1.2rem;
+    top: 1rem;
     right: 1rem;
     display: none;
     /* flex-direction: column; */
@@ -107,7 +124,7 @@
     background-color: #555;
   }
 
-  @media(max-width:600px) {
+  @media(max-width:890px) {
     .toggle_btn{
       display: flex;
       margin-left: 20px;
@@ -131,10 +148,11 @@
       justify-content: flex-start;
       position: absolute;
       right: 0;
-      top: 3.9rem;
+      top: 3.5rem;
       width: 95vw;
       height: 100vh;
-      background-color: #131921;
+      /* background-color: #131921; */
+      background-color: #7a7c7e;
       transition: 0.4s ease-in-out;
       z-index: 1;
     }

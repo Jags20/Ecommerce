@@ -33,7 +33,7 @@ const Nav = () => {
                 alt="logo" width="70" height="50"/> */}
                 {/* <img className={styles.myNav_logo} src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png"
                 alt="logo" width="70px"/> */}
-                <svg className={styles.myNav_logo} id="logo-69" width="80" height="80" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={styles.myNav_logo} id="logo-69" width="80" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path className="stroke" d="M36.95 4.31006H13.05L1.09998 25.0001L13.05 45.6901H36.95L48.9 25.0001L36.95 4.31006Z" stroke="black" strokeWidth="0.5" strokeMiterlimit="10"></path>
                 <path className="stroke" d="M14.66 5.38996C14.77 5.27996 25.54 5.20996 25.71 5.20996C25.88 5.20996 36.65 5.27996 36.71 5.38996C36.77 5.49996 47.51 24.05 47.51 24.22C47.51 24.39 36.87 42.94 36.76 43.05C36.65 43.16 25.88 43.22 25.76 43.22C25.64 43.22 14.82 43.16 14.76 43.05C14.7 42.94 3.85999 24.39 3.85999 24.22C3.85999 24.05 14.55 5.49996 14.66 5.38996Z" stroke="black" strokeWidth="0.5" strokeMiterlimit="10"></path><path className="stroke" d="M16.26 6.48012C16.49 6.26012 26.08 6.12012 26.42 6.12012C26.76 6.12012 36.36 6.26012 36.58 6.48012C36.8 6.70012 46.23 23.1001 46.23 23.4801C46.23 23.8601 36.8 40.2201 36.58 40.4801C36.36 40.7401 26.76 40.8401 26.42 40.8401C26.08 40.8401 16.49 40.7001 16.26 40.4801C16.03 40.2601 6.60999 23.8601 6.60999 23.4801C6.60999 23.1001 16 6.70012 16.26 6.48012Z" stroke="red" strokeWidth="0.5" strokeMiterlimit="10"></path>
                 <path className="stroke" d="M17.87 7.57C18.2 7.23 26.63 7 27.13 7C27.63 7 36.06 7.2 36.39 7.54C36.72 7.88 44.9 22.15 44.9 22.66C44.9 23.17 36.72 37.42 36.39 37.75C36.06 38.08 27.64 38.29 27.13 38.29C26.62 38.29 18.2 38.08 17.87 37.75C17.54 37.42 9.37 23.16 9.37 22.66C9.37 22.16 17.54 7.9 17.87 7.57Z" stroke="yellow" strokeWidth="0.5" strokeMiterlimit="10"></path>
@@ -59,12 +59,24 @@ const Nav = () => {
                         <a className={styles.myNav_home}>Home</a>
                     </Link>
 
-                    <Link href="/product" legacyBehavior>
+                    {/* <Link href="/product" legacyBehavior>
                         <a className={styles.myNav_home}>Product</a>
-                    </Link>
+                    </Link> */}
                     
-                    <Link href="/product" legacyBehavior>
-                        <a className={styles.myNav_home}>Items</a>
+                    <Link href="/jewel" legacyBehavior>
+                        <a className={styles.myNav_home}>Jewellery</a>
+                    </Link>
+
+                    <Link href="/electronic" legacyBehavior>
+                        <a className={styles.myNav_home}>Electronic</a>
+                    </Link>
+
+                    <Link href="/mens" legacyBehavior>
+                        <a className={styles.myNav_home}>Mens</a>
+                    </Link>
+
+                    <Link href="/women" legacyBehavior>
+                        <a className={styles.myNav_home}>Womens</a>
                     </Link>
                     </div>
                 <div>
@@ -87,6 +99,7 @@ const Nav = () => {
                 placeholder="search the store" 
                 type="text"
                 />
+                <h1 className={styles.search_sep}>|</h1>
                 <Link href="/error">
                 <SearchIcon className={styles.myNav_icon}/>
                 </Link>
@@ -108,10 +121,10 @@ const Nav = () => {
                 </Link>
                
                <a className={styles.myNav_count}>{count.length}</a> 
-               
+               <AuthDetails/>
              </div>
 
-             <AuthDetails/>
+             {/* <AuthDetails/> */}
         </div>
         
 // {/* Scoped css */}

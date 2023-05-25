@@ -35,7 +35,7 @@
 }
 
 .card{
-    height: 60vh;
+    height: 65vh;
     margin-bottom: 2rem;
 }
 .card:hover > button{

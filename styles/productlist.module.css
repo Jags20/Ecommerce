@@ -3,6 +3,8 @@
     background-color: antiquewhite;
     grid-auto-flow: column;
     align-items: start;
+    justify-content: space-around;
+    /* align-items: ; */
     grid-template-rows: repeat(3, auto);
     width: 100%;
     /* border: 1px solid black; */
