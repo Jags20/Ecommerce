@@ -3,10 +3,12 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { Pinterest } from "@mui/icons-material";
 
 const Footer = () => {
     return(
-        <div className={styles.myFooter}>
+        <div>
+            <div className={styles.myFooter}>
             <div>
                 <h6><strong>Online Shopping</strong></h6>
                 <div className={styles.section1}>
@@ -61,6 +63,21 @@ const Footer = () => {
                     <InstagramIcon/>
                 </div>
 
+            </div>
+
+            </div>
+
+            <div className={styles.myFooter_mob}>
+                <h4 className={styles.myFooter_mob_heading_top}>Follow us</h4>
+                <hr/>
+                <div className={styles.logos_inside}>
+                    <FacebookIcon/>
+                    <TwitterIcon/>
+                    <YouTubeIcon/>
+                    <InstagramIcon/>
+                    <Pinterest/>
+                </div>
+                <h6 className={styles.myFooter_mob_heading_bottom}>Copyright © 2023 All Rights Reserved</h6>
             </div>
 
             {/* <div>
