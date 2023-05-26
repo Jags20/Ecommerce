@@ -51,6 +51,8 @@
 
   .search_sep{
     color: #7a7c7e;
+    /* scale: 1.2; */
+    font-size: 2.5rem;
     font-weight: 300;
   }
 
