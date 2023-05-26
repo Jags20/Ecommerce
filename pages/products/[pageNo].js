@@ -47,7 +47,7 @@ const pageNo = ( {response} ) => {
         <h2 className={styles.heading}>{title}</h2>
         <div className={styles.main}>
           <div className={styles.main_pic}>
-            <Image src={image} height={550} width={470} alt='items'/>
+            <Image className={styles.main_image} src={image} height={550} width={450} alt='items'/>
           </div>
           <div className={styles.main_detail}>
             <h3 className={styles.category}>{category}</h3>

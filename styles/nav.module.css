@@ -16,7 +16,6 @@
    }
 
    .myNav_logo{
-    border-radius: 50%;
     margin-left: 0.4rem;
    }
 
@@ -96,6 +95,15 @@
   }
 
   .myNav_home1{
+    margin: 6px;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+
+  .myNav_home56{
+    display: none;
     margin: 6px;
     padding: 8px;
     text-decoration: none;
@@ -183,12 +191,22 @@
       /* display: none; */
     }
 
-
+    .myNav_search{
+      margin: 4px;
+    }
+    .myNav_logo{
+      width: 50px;
+    }
 
 
     .myNav_home1{
+      display: none;
       margin-right: 12px;
       padding: 5px;
+    }
+    .myNav_home56{
+      display: block;
+      margin-left: 0.9rem;
     }
 
     .myNav_iconBasket{

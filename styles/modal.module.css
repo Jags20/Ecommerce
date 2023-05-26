@@ -11,7 +11,7 @@
 .modal_main{
     background: rgb(184, 180, 180);
     position: fixed;
-    height: 95%;
+    height: 94%;
     overflow-y: auto;
     margin-top: 3rem;
     right: 0;
@@ -170,6 +170,8 @@
 
 .modal_btn_buy{
   margin-top: 0.3rem;
+  /* margin-bottom: 1rem; */
+  /* padding: 2rem; */
   background-color: rgb(224, 170, 21);
   border: none;
   border-color:rgb(224, 170, 21) ;
@@ -195,7 +197,15 @@
 
 @media screen and (max-width:926px) {
     .modal_main{
-        width: 90vw;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .modal_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

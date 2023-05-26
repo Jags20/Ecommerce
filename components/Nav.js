@@ -78,6 +78,11 @@ const Nav = () => {
                     <Link href="/women" legacyBehavior>
                         <a className={styles.myNav_home}>Womens</a>
                     </Link>
+                    <Link href='/profile' legacyBehavior>
+                    {/* two classname */}
+                    {/* className={`${styles["card"]} ${styles["grid"]}`} */}
+                    <a className={styles.myNav_home56} >Profile</a>
+                </Link>
                     </div>
                 <div>
                     <a className={styles.toggle_btn} onClick={() => handleMenuClick()}>

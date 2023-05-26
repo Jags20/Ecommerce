@@ -4,6 +4,10 @@
     grid-gap: 30px;
     cursor: pointer;
     position: relative;
+    margin: 1.3rem;
+    padding: 0.8rem;
+    /* width: 100vw; */
+    /* height: auto; */
     /* margin: 0; */
     /* z-index: 1; */
     /* justify-content: center; */
@@ -15,7 +19,7 @@
 }
 
 .button{
-    display: none;
+    display:block;
     width: 65%;
     padding: 5px;
     background: #d9a90c;
@@ -34,12 +38,29 @@
     background: #d9a90c;
 }
 
-.card{
-    height: 65vh;
+/* .card{
     margin-bottom: 2rem;
-}
-.card:hover > button{
+} */
+/* .card:hover > button{
     display: block;
+} */
+
+@media screen and (max-width:890px) {
+    .cardstyle{
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button{
+        width: 80%;
+    }
 }
 
 
