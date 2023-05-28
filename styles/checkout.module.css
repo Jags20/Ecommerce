@@ -95,3 +95,79 @@
     border-radius: 3%;
     width: 50%;
 }
+
+@media screen and (max-width:700px) {
+    .checkout_heading{
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .checkout_country{
+        width: 80vw;
+        /* margin-left: 1.5%; */
+        padding: 0.6rem;
+    }
+
+    .checkout_name{
+        display: flex;
+        flex-direction: column;
+    }
+    .checkout_lname{
+        width: 80vw;
+        padding: 0.6rem;
+        /* margin: 1rem; */
+    }
+    .checkout_fname{
+        width: 80vw;
+        padding: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .checkout_street_add{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+    .checkout_street_address{
+        width: 80vw;
+        padding: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    .checkout_street_apartment{
+        width: 80vw;
+        padding: 0.6rem;
+    }
+
+    .checkout_state{
+        display: flex;
+        flex-direction: column;
+    }
+    .checkout_city{
+        width: 80vw;
+        padding: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    .checkout_capital{
+        width: 80vw;
+        padding: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    .checkout_pin{
+        width: 80vw;
+        padding: 0.6rem;
+    }
+
+    .checkout_phone{
+        width: 80vw;
+        padding: 0.6rem;
+    }
+
+    .checkout_payment{
+        width: 80vw;
+        padding: 0.6rem;
+    }
+}

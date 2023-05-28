@@ -82,7 +82,7 @@ const Wishlist = () => {
             
             {/* <button onClick={() => clearCart()} className={styles.btnn}>Clear cart</button> */}
             </div>
-            <hr/>
+            <hr className={styles.line}/>
             { items.length > 0 ? (
                 items.map((user, i) => {
                   return(
@@ -109,28 +109,31 @@ const Wishlist = () => {
                   );
                 })
             ) : (
-              <div style={{
-                color:"red",
-                display:"flex",
-                alignItems:"center",
-                flexDirection:"column",
-                justifyContent:"center",
-                height:"60vh",
-                margin:"1rem"
-              }}>
-              <h2 style={{
-                fontSize:"3rem"
-              }}>Your Cart is Empty</h2>
-              <button style={{
-                width:"60%",
-                fontSize:"2rem"
-              }} className={styles.product_btn_shop} 
+              <div className={styles.empty_cart}>
+              <h2 className={styles.empty_cart_heading}>Your Cart is Empty</h2>
+              <button className={styles.empty_cart_button} 
                   onClick={ () => router.push("/product")} >
                   Continue Shopping
                 </button>
               </div>
                 ) }
           </div>
+          <div className={styles.cart_final}>
+              {items.length > 0 &&
+                     (
+                      <>
+                        <p>Subtotal <strong>({items.length} items):</strong> </p>
+                        <Subtotal/>
+                        <small>
+                        <input type="checkbox" />
+                        This order contains a free gift:
+                        </small>
+                        <button className={styles.product_btn_subt} onClick={() =>buy()} >Proceed To Buy</button>
+                      </>
+                    )  
+              }
+            
+            </div>
           </div>
         </Layout>
     )

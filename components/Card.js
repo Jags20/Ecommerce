@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "@/styles/card.module.css";
 
 const descStyle = {
     color: "black",
     margin: "auto",
     textAlign: "center",
     textDecoration: "none !important",
-    textTransform:"uppercase"
+    textTransform:"uppercase",
+    
 }
 
 const Card = ({pri, cat, image}) => {
@@ -14,13 +16,13 @@ const Card = ({pri, cat, image}) => {
         <div className="card_list">
 
             <Link href="/product">
-                <Image src={image} alt="prod" height={180} width={180}/>
+                <Image src={image} alt="prod" height={180} width={180} className={styles.picture}/>
             </Link>
                 {/* <img src = {image} alt="prod" */}
                 {/* height='180px' width='180px'/> */}
                 <div>        
                     <p className="product_title">
-                        <small style={descStyle}>{cat}</small><br/>
+                        <small style={descStyle} className={styles.categorg_card}>{cat}</small><br/>
                         {/* <strong>${pri}</strong> */}
                     </p>    
                 </div>

@@ -8,7 +8,7 @@ const CategoryList = ( {category}) => {
             // gridTemplateColumns:"repeat(4,auto)",
             // justifyItems:"center",
             display:"flex",
-            justifyContent:"space-around",
+            justifyContent:"space-evenly",
             flexWrap:"wrap",
             background:"antiquewhite",
 

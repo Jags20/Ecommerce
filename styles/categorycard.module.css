@@ -1,0 +1,11 @@
+@media screen and (max-width: 370px) {
+    .picture{
+        width: 115px;
+        height: 130px;
+    }
+  }
+
+  .category_main{
+    margin: 0.5rem;
+    padding: 0.2rem;
+  }

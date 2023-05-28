@@ -1,0 +1,9 @@
+@media screen and (max-width: 370px) {
+    .picture{
+        width: 125px;
+        height: 140px;
+    }
+    .categorg_card{
+        font-size: 0.7rem;
+    }
+  }

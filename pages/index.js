@@ -132,7 +132,8 @@ const Index = () => {
                             {color: "red",
                             textAlign:"center",
                             background:"#0aaa1658",
-                            padding:"5px"
+                            padding:"5px",
+                            marginBottom:"0",
                             }}
                             >Jewellery Collection</h3>
                         </div>
@@ -146,7 +147,8 @@ const Index = () => {
                             {color: "red",
                             textAlign:"center",
                             background:"#0aaa1658",
-                            padding:"5px"
+                            padding:"5px",
+                            marginBottom:"0",
                             }}
                             >Men Collection</h3>
                         </div>
@@ -160,7 +162,8 @@ const Index = () => {
                             {color: "red",
                             textAlign:"center",
                             background:"#0aaa1658",
-                            padding:"5px"
+                            padding:"5px",
+                            marginBottom:"0",
                             }}
                             >Electronic Collection</h3>
                         </div>
@@ -174,7 +177,8 @@ const Index = () => {
                             {color: "red",
                             textAlign:"center",
                             background:"#0aaa1658",
-                            padding:"5px"
+                            padding:"5px",
+                            marginBottom:"0",
                             }}
                             >Womens Collection</h3>
                         </div>
@@ -194,7 +198,7 @@ const Index = () => {
                         <h3 style={
                             {color: "red",
                             textAlign:"center"
-                            }}
+                            }} className="wow"
                             >WOW TRENDS AT WOW PRICES</h3>
                         <Link href="/product">    
                             <button style={
@@ -226,6 +230,12 @@ const Index = () => {
 
                 justify-content: center;
             }
+
+            @media screen and (max-width: 500px) {
+                .wow{
+                    font-size:1rem;
+                }
+              }
 
             button{
                 font-size: 25px;
