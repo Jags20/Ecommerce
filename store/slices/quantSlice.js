@@ -11,11 +11,13 @@ const quantSlice = createSlice({
         //     return (state + 1);
         // }
         increase(state,action)  {
-            const {payload:itemId} = action;
+            // const {payload:itemId} = action;
+            const itemId = action.payload
             state[itemId] = (state[itemId] || 0) +1;
         },
         decrease(state,action) {
-            const {payload:itemId} = action;
+            // const {payload:itemId} = action;
+            const itemId = action.payload;
             if (state[itemId] && state[itemId] > 0) {
                 state[itemId] -= 1;
             }

@@ -1,6 +1,6 @@
 .grid{
     display: grid;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     grid-auto-flow: column;
     align-items: start;
     justify-content: space-around;

@@ -3,6 +3,8 @@ import Layout from '@/components/Layout';
 import axios from 'axios';
 import Image from 'next/image';
 import styles from "@/styles/pageno.module.css";
+import { useDispatch } from 'react-redux';
+import Button from '@/components/Button';
 
 export const getStaticPaths = async () => {
   const res = await axios.get(`https://fakestoreapi.com/products`);
@@ -40,6 +42,8 @@ export const getStaticProps = async (context) => {
 const pageNo = ( {response} ) => {
 
   const { image, title, description, price,rating,category } = response;
+
+  // let dispatch = useDispatch();
   return (
     <>
       <Layout>
@@ -63,7 +67,8 @@ const pageNo = ( {response} ) => {
             <p><strong>About this item:</strong>
             <br/>{description}</p>
             <hr/>
-            <button className={styles.main_button}>Add to cart</button>
+            {/* <button className={styles.main_button}>Add to cart</button> */}
+            <Button item={response}/>
           </div>
           <div className={styles.main_3}></div>
         </div>

@@ -1,0 +1,23 @@
+.sub_total{
+    margin-bottom: 1px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.sub_saved{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: grey;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 350px){
+    .sub_total{
+        font-size: 16px;
+    }
+    .sub_saved{
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+}

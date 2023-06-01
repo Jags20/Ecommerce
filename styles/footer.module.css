@@ -1,32 +1,5 @@
-.myFooter{
-    display: flex;
-    /* padding: 5px; */
-    justify-content:space-around;
-    /* background-color: #7a7c7e; */
-}
-
-.section1{
-    display: block;
-    line-height: 40%;
-    cursor: pointer;
-    color: #696b79;
-    font-size: 15px;
-    padding-bottom: 5px;
-    
-}
-
-.imgSec{
-    width: 30%;
-}
-
-.logos{
-    display: flex;
-    height: 5%;
-    /* justify-content: space-around; */
-}
-
 .myFooter_mob{
-    display: none;
+    display: flex;
     flex-direction: column;
     /* align-items: center; */
     background: grey;
@@ -53,21 +26,36 @@
 
 }
 
-/* .last{
+/* .myFooter{
+    display: none;
+    justify-content:space-around;
+}
+
+.section1{
+    display: block;
+    line-height: 40%;
+    cursor: pointer;
+    color: #696b79;
+    font-size: 15px;
+    padding-bottom: 5px;
+    
+}
+
+.imgSec{
+    width: 30%;
+}
+
+.logos{
     display: flex;
-    flex-direction: row;
-    width: 40%;
-} */
-/* .imge{
-    height: 10%;
-    width: 35%;
+    height: 5%;
 } */
 
-@media screen and (max-width:500px) {
+
+/* @media screen and (max-width:500px) {
     .myFooter{
         display: none;
     }
     .myFooter_mob{
         display: flex;
     }
-}
+} */

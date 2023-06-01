@@ -26,7 +26,7 @@ const Storelist = ( {store} ) => {
         <div className={styles.cardstyle}>
              {
                     store?.map((user,i) => {
-                        // console.log(arr);
+                        // console.log(user);
                     return(
                         <div key={i} className={styles.card}>
                             <ProductCard

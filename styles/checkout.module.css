@@ -97,10 +97,10 @@
 }
 
 @media screen and (max-width:700px) {
+    .checkout{
+        width: 100%;
+    }
     .checkout_heading{
-        display: flex;
-        justify-content: center;
-        font-weight: 600;
         font-size: 1.3rem;
         text-transform: uppercase;
         text-decoration: underline;
@@ -169,5 +169,73 @@
     .checkout_payment{
         width: 80vw;
         padding: 0.6rem;
+    }
+}
+
+/* @media screen and (max-width:300px) {
+    .checkout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .checkout_heading{
+        transform: translateX(-13%);
+    }
+
+    .checkout_country{
+        width: 240px;
+    }
+    .checkout_name{
+        width: 240px;
+    }
+    .checkout_fname{
+        width: 240px;
+    }
+    .checkout_lname{
+        width: 240px;
+    }
+    .checkout_street_add{
+        width: 240px;
+    }
+    .checkout_street_address{
+        width: 240px;
+    }
+    .checkout_street_apartment{
+        width: 240px;
+    }
+    .checkout_state{
+        width: 240px;
+    }
+    .checkout_city{
+        width: 240px;
+    }
+    .checkout_capital{
+        width: 240px;
+    }
+    .checkout_pin{
+        width: 240px;
+    }
+    .checkout_phone{
+        width: 240px;
+    }
+    .checkout_save{
+        width: 240px;
+    }
+    .checkout_payment{
+        width: 240px;
+    }
+    .checkout_button{
+        width: 240px;
+    }
+} */
+
+@media screen and (max-width:300px) {
+    .checkout{
+        display: flex;
+        width: 70vw;
+        transform: translateX(15%);        
+    }
+    .checkout_heading{
+        transform: translateX(-8%);
     }
 }

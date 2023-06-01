@@ -10,7 +10,7 @@ const CategoryList = ( {category}) => {
             display:"flex",
             justifyContent:"space-evenly",
             flexWrap:"wrap",
-            background:"antiquewhite",
+            background:"white",
 
         }}>
             {category?.map ( (user,i) => {

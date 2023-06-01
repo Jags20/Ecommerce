@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import styles from "@/styles/subtotal.module.css";
 
 const Subtotal = () => {
 
@@ -7,26 +8,20 @@ const Subtotal = () => {
     });
 
     const totalPrice = total.reduce((acc, user) => {
-        return acc + user.price;
+        return acc + (user.price*user.quantity);
       }, 0);
+
+      let originalPrice = totalPrice - (totalPrice*10)/100;
+      let savedAmout = totalPrice- originalPrice;
 
     return(
         <div>
-            <p style={
-                {marginBottom:"1px",
-                fontSize:"22px"
-                }} 
+            <p className={styles.sub_total}
                 >Total: $
-                <strong>{Math.floor(totalPrice - (totalPrice*10)/100)}</strong>
+                <strong>{originalPrice.toFixed(2)}</strong>
             </p>
-            <p style={
-                {marginBottom:"15px",
-                 fontSize:"18px",
-                 color:"grey",
-                 fontWeight:"600",
-                 textDecoration:"underLine"
-                }}
-                >you saved: ${Math.round(totalPrice- (totalPrice - (totalPrice*10)/100))}
+            <p className={styles.sub_saved}
+                >you saved: ${savedAmout.toFixed(2)}
             </p>
         </div>
     );

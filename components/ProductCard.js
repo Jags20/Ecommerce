@@ -15,6 +15,8 @@ const ProductCard = ({ image, price, category, title, id }) => {
     //     dispatch(addToBasket(store));
     // }
 
+    let discountedPrice = price - (price*10)/100;
+
     return(
         <div className={styles.productcard}>
             <Link href={`../products/${id}`}>
@@ -26,7 +28,7 @@ const ProductCard = ({ image, price, category, title, id }) => {
             <p className={styles.title}>{title}</p>
             </div>
             <div className={styles.price}>
-            <p className={styles.pricing_main}>${Math.floor(price - (price*10)/100)}</p>
+            <p className={styles.pricing_main}>${discountedPrice.toFixed(2)}</p>
             <p className={styles.pricing}><strong>$</strong>{price}</p>
             
             </div>

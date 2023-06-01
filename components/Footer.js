@@ -8,7 +8,21 @@ import { Pinterest } from "@mui/icons-material";
 const Footer = () => {
     return(
         <div>
-            <div className={styles.myFooter}>
+
+            <div className={styles.myFooter_mob}>
+                <h4 className={styles.myFooter_mob_heading_top}>Follow us</h4>
+                <hr/>
+                <div className={styles.logos_inside}>
+                    <FacebookIcon/>
+                    <TwitterIcon/>
+                    <YouTubeIcon/>
+                    <InstagramIcon/>
+                    <Pinterest/>
+                </div>
+                <h6 className={styles.myFooter_mob_heading_bottom}>Copyright © 2023 All Rights Reserved</h6>
+            </div>
+
+            {/* <div className={styles.myFooter}>
             <div>
                 <h6><strong>Online Shopping</strong></h6>
                 <div className={styles.section1}>
@@ -49,12 +63,6 @@ const Footer = () => {
             </div>
 
             <div className={styles.imgSec}>
-                {/* <h6><strong>Experience App on Mobile</strong></h6>
-                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                alt="logo"  width='50%'/>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
-                alt="logo"  width='50%'/> */}
-
                 <p><strong>Keep in Touch</strong></p>
                 <div className={styles.logos}>
                     <FacebookIcon/>
@@ -65,20 +73,7 @@ const Footer = () => {
 
             </div>
 
-            </div>
-
-            <div className={styles.myFooter_mob}>
-                <h4 className={styles.myFooter_mob_heading_top}>Follow us</h4>
-                <hr/>
-                <div className={styles.logos_inside}>
-                    <FacebookIcon/>
-                    <TwitterIcon/>
-                    <YouTubeIcon/>
-                    <InstagramIcon/>
-                    <Pinterest/>
-                </div>
-                <h6 className={styles.myFooter_mob_heading_bottom}>Copyright © 2023 All Rights Reserved</h6>
-            </div>
+            </div> */}
 
             {/* <div>
                 <div className={styles.last}>

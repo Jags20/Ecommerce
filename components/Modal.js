@@ -4,8 +4,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import styles from "@/styles/modal.module.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { increase, decrease } from "@/store/slices/quantSlice";
-import { removeFromBasket, clearAllUser } from "@/store/slices/basketSlice";
+// import { increase, decrease } from "@/store/slices/quantSlice";
+import { removeFromBasket, clearAllUser, increase , decrease } from "@/store/slices/basketSlice";
 import Subtotal from "./Subtotal";
 import Link from "next/link";
 import Image from 'next/image';
@@ -64,6 +64,11 @@ const Modal = ( {setIsOpen}) => {
                     }}>Your Cart is Empty</h1>
                 ) : (
                         items?.map((user, id) => {
+
+                            let originalPrice = user.price*user.quantity;
+                            let discountedPrice = originalPrice- (originalPrice * 10)/100;
+                            let savedAmout = originalPrice - discountedPrice;
+
                             return (
                                 <div key={id} className={styles.modal_card}>
                                     <Image className={styles.modal_img} src={user.image} width={250} height={280} alt="product"/>
@@ -71,8 +76,22 @@ const Modal = ( {setIsOpen}) => {
                                     <div className={styles.modal_el}>
                                     <div className={styles.modal_para}>
                                         <p className={styles.modal_title}>{user.title}</p>
-                                        <p>Quantity:{user.quantity}</p>
-                                        <p className={styles.modal_price}><strong>$ {user.price*user.quantity}</strong></p>
+                                        {/* <p>Quantity:{user.quantity}</p> */}
+                                        <div className={styles.price}>
+                                        <p className={styles.pricing_main}>${discountedPrice.toFixed(2)}</p>
+                                        <p className={styles.modal_price}><strong>$ {originalPrice.toFixed(2)}</strong></p>
+                                        </div>
+                                        <p style={
+                                            {marginBottom:"5px",
+                                            fontSize:"18px",
+                                            color:"grey",
+                                            fontWeight:"600",
+                                            // textDecoration:"underLine"
+                                            }} className={styles.saving}
+                                            >Saving: ${savedAmout.toFixed(2)}
+                                        </p>
+                                        {/* <p className={styles.pricing}><strong>$</strong>{user.price}</p> */}
+            
                                     </div>
 
                                     <div className={styles.modal_quantity}>
@@ -80,7 +99,7 @@ const Modal = ( {setIsOpen}) => {
                                             <span className={styles.modal_quant}> - </span>
                                         </a>
 
-                                        <input name="quantity" type="text" value={quantChange[user.id] || 1} className={styles.modal_input} readOnly/>
+                                        <input name="quantity" type="text" value={user.quantity} className={styles.modal_input} readOnly/>
                                         <a className={styles.modal_incr} title="increase" onClick={ () => increment(user.id)}>
                                             <span className={styles.modal_quant}> + </span>
                                         </a>
@@ -102,7 +121,7 @@ const Modal = ( {setIsOpen}) => {
                             <div>
                                 <p style={{
                                     marginBottom:"0"
-                                }}>Subtotal <strong>({items.length} items):</strong> </p>
+                                }} className={styles.sub_para}>Subtotal <strong>({items.length} items):</strong> </p>
                                 <Subtotal />
                             </div>
                             <div>

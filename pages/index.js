@@ -129,9 +129,9 @@ const Index = () => {
                         {/* <Link href="/jewel"> */}
                         <div className="home_row2title">
                         <h3 style={
-                            {color: "red",
+                            {color: "#967E76",
                             textAlign:"center",
-                            background:"#0aaa1658",
+                            background:"#EEE3CB",
                             padding:"5px",
                             marginBottom:"0",
                             }}
@@ -144,9 +144,9 @@ const Index = () => {
                         
                         <div className="home_row2title">
                         <h3 style={
-                            {color: "red",
+                            {color: "#967E76",
                             textAlign:"center",
-                            background:"#0aaa1658",
+                            background:"#EEE3CB",
                             padding:"5px",
                             marginBottom:"0",
                             }}
@@ -159,9 +159,9 @@ const Index = () => {
                         
                         <div className="home_row2title">
                         <h3 style={
-                            {color: "red",
+                            {color: "#967E76",
                             textAlign:"center",
-                            background:"#0aaa1658",
+                            background:"#EEE3CB",
                             padding:"5px",
                             marginBottom:"0",
                             }}
@@ -174,9 +174,9 @@ const Index = () => {
                         
                         <div className="home_row2title">
                         <h3 style={
-                            {color: "red",
+                            {color: "#967E76",
                             textAlign:"center",
-                            background:"#0aaa1658",
+                            background:"#EEE3CB",
                             padding:"5px",
                             marginBottom:"0",
                             }}
@@ -190,13 +190,13 @@ const Index = () => {
                     <div className="home_row2">
                         <div className="home_row2title">
                         <h1 style={
-                            {color: "blue",
+                            {color: "#967E76",
                             padding:"0.3rem",
                             textAlign:"center"
                             }}
                             >Budget Buys</h1>
                         <h3 style={
-                            {color: "red",
+                            {color: "#967E76",
                             textAlign:"center"
                             }} className="wow"
                             >WOW TRENDS AT WOW PRICES</h3>
@@ -230,6 +230,10 @@ const Index = () => {
 
                 justify-content: center;
             }
+            .home_row2title{
+                    background:#EEE3CB;
+                
+            }
 
             @media screen and (max-width: 500px) {
                 .wow{
@@ -240,10 +244,7 @@ const Index = () => {
             button{
                 font-size: 25px;
             }
-            .home_row2{
-                background: #0aaa1658;
-                
-            }`}</style>
+            `}</style>
         </Layout>
     )
 }

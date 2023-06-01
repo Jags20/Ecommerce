@@ -35,6 +35,10 @@
     border-radius: 25px;
     /* object-fit: fill; */
   }
+
+  .myNav_search56{
+    display: none;
+  }
   
   
   .myNav_searchInput{
@@ -213,5 +217,65 @@
     }
 
   }
+
+  @media screen and (max-width:420px) {
+    .my_nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .myNav_iconBasket{
+      margin-top: 8px;
+      position: fixed;
+      left: 72%;
+      transform: translateY(-55%);
+    }
+    .myNav_count{
+      margin-top: 10px;
+      position: absolute;
+      left: 80%;
+      transform: translateY(-57%);
+    }
+    .myNav_search{
+      display: none;
+    }
+    .myNav_search56{
+      display: flex;
+      margin-left: 0.9rem;
+      align-items: center;
+      width: 80%;
+      background-color: white;
+      border-radius: 45px;
+    }
+    .myNav_searchInput{
+      height: 30px;
+      padding: 5px;
+      border: none;
+      outline: none;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 20px; /* Adjust the value to increase or decrease the curve */
+      padding: 10px; 
+    }
+    .search_sep{
+      display: none;
+    }
+}
+
+@media screen and (max-width:300px) {
+  .myNav_iconBasket{
+    margin-top: 8px;
+    position: fixed;
+    left: 65%;
+    transform: translateY(-55%);
+  }
+  .myNav_count{
+    margin-top: 10px;
+    position: absolute;
+    left: 75%;
+    transform: translateY(-57%);
+  }
+}
 
    

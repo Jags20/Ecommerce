@@ -48,41 +48,52 @@ const Nav = () => {
                 </Link>
 
                 <div 
-                className={
-                    // menu is true title_mob class is applied
-                    menu
-                    ? styles["myNav_title_mob"]
-                    : styles["myNav_title"]
-                        }
-                >
-                    <Link href="/" legacyBehavior>
-                        <a className={styles.myNav_home}>Home</a>
-                    </Link>
+                    className={
+                        // menu is true title_mob class is applied
+                        menu
+                        ? styles["myNav_title_mob"]
+                        : styles["myNav_title"]
+                            }
+                    >
+                        <Link href="/" legacyBehavior>
+                            <a className={styles.myNav_home}>Home</a>
+                        </Link>
 
-                    {/* <Link href="/product" legacyBehavior>
-                        <a className={styles.myNav_home}>Product</a>
-                    </Link> */}
-                    
-                    <Link href="/jewel" legacyBehavior>
-                        <a className={styles.myNav_home}>Jewellery</a>
-                    </Link>
+                        {/* <Link href="/product" legacyBehavior>
+                            <a className={styles.myNav_home}>Product</a>
+                        </Link> */}
+                        
+                        <Link href="/jewel" legacyBehavior>
+                            <a className={styles.myNav_home}>Jewellery</a>
+                        </Link>
 
-                    <Link href="/electronic" legacyBehavior>
-                        <a className={styles.myNav_home}>Electronic</a>
-                    </Link>
+                        <Link href="/electronic" legacyBehavior>
+                            <a className={styles.myNav_home}>Electronic</a>
+                        </Link>
 
-                    <Link href="/mens" legacyBehavior>
-                        <a className={styles.myNav_home}>Mens</a>
-                    </Link>
+                        <Link href="/mens" legacyBehavior>
+                            <a className={styles.myNav_home}>Mens</a>
+                        </Link>
 
-                    <Link href="/women" legacyBehavior>
-                        <a className={styles.myNav_home}>Womens</a>
-                    </Link>
-                    <Link href='/profile' legacyBehavior>
-                    {/* two classname */}
-                    {/* className={`${styles["card"]} ${styles["grid"]}`} */}
-                    <a className={styles.myNav_home56} >Profile</a>
-                </Link>
+                        <Link href="/women" legacyBehavior>
+                            <a className={styles.myNav_home}>Womens</a>
+                        </Link>
+                        <Link href='/profile' legacyBehavior>
+                        {/* two classname */}
+                        {/* className={`${styles["card"]} ${styles["grid"]}`} */}
+                        <a className={styles.myNav_home56} >Profile</a>
+                        </Link>
+
+                        <div className={styles.myNav_search56}>
+                            <input className={styles.myNav_searchInput}
+                            placeholder="search the store" 
+                            type="text"
+                            />
+                            <h1 className={styles.search_sep}>|</h1>
+                            <Link href="/error">
+                            <SearchIcon className={styles.myNav_icon}/>
+                            </Link>
+                        </div>
                     </div>
                 <div>
                     <a className={styles.toggle_btn} onClick={() => handleMenuClick()}>
