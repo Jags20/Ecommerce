@@ -1,7 +1,7 @@
 // import { Close } from "@material-ui/icons";
 import CloseIcon from '@mui/icons-material/Close';
 // import { CloseReason } from '@mui/material';
-import styles from "@/styles/modal.module.css";
+import styles from "@/styles/modald.module.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 // import { increase, decrease } from "@/store/slices/quantSlice";
@@ -10,7 +10,7 @@ import Subtotal from "./Subtotal";
 import Link from "next/link";
 import Image from 'next/image';
 
-const Modal = ( {setIsOpen}) => {
+const ModalD = ( {setIsOpen}) => {
 
     const dispatch = useDispatch();
 
@@ -79,7 +79,7 @@ const Modal = ( {setIsOpen}) => {
                                         {/* <p>Quantity:{user.quantity}</p> */}
                                         <div className={styles.price}>
                                         <p className={styles.pricing_main}>${discountedPrice.toFixed(2)}</p>
-                                        <p className={styles.modal_price}><strong>${originalPrice.toFixed(2)}</strong></p>
+                                        <p className={styles.modal_price}><strong>$ {originalPrice.toFixed(2)}</strong></p>
                                         </div>
                                         <p style={
                                             {marginBottom:"5px",
@@ -152,4 +152,4 @@ const Modal = ( {setIsOpen}) => {
     );
 }
 
-export default Modal;
+export default ModalD;

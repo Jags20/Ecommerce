@@ -42,6 +42,8 @@ export const getStaticProps = async (context) => {
 const pageNo = ( {response} ) => {
 
   const { image, title, description, price,rating,category } = response;
+  const discountedPrice = price - (price*10)/100;
+  const amountSaved = price - discountedPrice;
 
   // let dispatch = useDispatch();
   return (
@@ -58,11 +60,11 @@ const pageNo = ( {response} ) => {
             <p>Rating: <strong>{rating.rate}</strong> out of {rating.count} reviews</p>
             <hr/>
             {/* <h1>$ {price}</h1> */}
-            <div className={styles.main_price}>
+            <div className={styles.main_price}> 
+            <p className={styles.price_discount}>${discountedPrice.toFixed(2)}</p>
             <p className={styles.price}>$ {price}</p>
-            <p className={styles.price_discount}>${Math.floor(price - (price*10)/100)}</p>
             </div>
-            <span>You Saved Approx: <strong> ${Math.round(price - Math.floor(price - (price*10)/100)) }</strong></span>
+            <span>You Saved Approx: <strong> ${amountSaved.toFixed(2)}</strong></span>
             <hr/>
             <p><strong>About this item:</strong>
             <br/>{description}</p>

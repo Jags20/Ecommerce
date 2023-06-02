@@ -1,10 +1,11 @@
 import Layout from "@/components/Layout";
 import styles from "@/styles/wishlist.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromBasket, clearAllUser } from "@/store/slices/basketSlice";
+import { removeFromBasket, clearAllUser, increase, decrease} from "@/store/slices/basketSlice";
 import Subtotal from "@/components/Subtotal";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 
 const Wishlist = () => {
 
@@ -23,6 +24,14 @@ const Wishlist = () => {
 
   const clearCart = () => {
     dispatch(clearAllUser());
+  }
+
+  const decrement = (itemId) => {
+    dispatch(decrease(itemId));
+  }
+
+  const increment = (itemId) => {
+      dispatch(increase(itemId));
   }
 
   const buy = ()  => {
@@ -85,18 +94,35 @@ const Wishlist = () => {
             <hr className={styles.line}/>
             { items.length > 0 ? (
                 items.map((user, i) => {
+
+                  let originalPrice = user.price * user.quantity;
+                  let discountedPrice = originalPrice - (originalPrice*10)/100;
+                  
                   return(
                     <div key={i} className={styles.sub}>
+                      <Link href={`/products/${user.id}`}>
                       <Image src={user.image} height={200} width={200} alt="picc" className={styles.product_img}/>
+                      </Link>
                       {/* <img src={user.image} className={styles.product_img} alt="hujko"/> */}
                       <div className={styles.sub1}>
                         <div className={styles.para}>
                       <p className={styles.title}>{user.title}</p>
+                      {/* <p>Quantity:{user.quantity}</p> */}
                       <p className={styles.price}>
                         <small>$</small>
-                        <strong>{Math.floor(user.price - (user.price*10)/100)} </strong>
-                        <small className={styles.oldPrice}>${user.price}</small>
+                        <strong className={styles.discount}>{discountedPrice.toFixed(2)} </strong>
+                        <small className={styles.oldPrice}>$ {originalPrice}</small>
                       </p>
+
+                      <div className={styles.modal_quantity}>
+                          <a className={styles.modal_dec} title="decrease" onClick={ () => decrement(user.id)}>
+                              <span className={styles.modal_quant}> - </span>
+                          </a>
+                          <input name="quantity" type="text" value={user.quantity} className={styles.modal_input} readOnly/>
+                          <a className={styles.modal_incr} title="increase" onClick={ () => increment(user.id)}>
+                              <span className={styles.modal_quant}> + </span>
+                          </a>
+                      </div>
                       
   
                       </div>
