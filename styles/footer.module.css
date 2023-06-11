@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    background: grey;
+    background: rgb(184, 180, 180);;
     color: white;
 }
 
@@ -25,6 +25,8 @@
     /* color: black; */
 
 }
+
+
 
 /* .myFooter{
     display: none;

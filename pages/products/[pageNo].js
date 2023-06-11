@@ -64,6 +64,9 @@ const pageNo = ( {response} ) => {
             <p className={styles.price_discount}>${discountedPrice.toFixed(2)}</p>
             <p className={styles.price}>$ {price}</p>
             </div>
+            <div className={styles.rating_check}>
+              {rating.rate}⭐ 
+            </div>
             <span>You Saved Approx: <strong> ${amountSaved.toFixed(2)}</strong></span>
             <hr/>
             <p><strong>About this item:</strong>
@@ -74,7 +77,17 @@ const pageNo = ( {response} ) => {
           </div>
           <div className={styles.main_3}></div>
         </div>
-          
+        <hr/>
+          <div style={{
+            display:"flex",
+            flexDirection:"row",
+            margin:"1rem",
+          }}>
+          <form>
+            Be the first to review. <br/>
+            <input type='text' placeholder='write a review'/>
+          </form>
+          </div>
         </div>
       {/* <h1>Helllo!</h1> */}
       </Layout>

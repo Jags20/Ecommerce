@@ -5,6 +5,7 @@
 
 .main{
     display: flex;
+    /* height: 90vh; */
 }
 
 .main_pic{
@@ -15,6 +16,12 @@
 
 .main_image{
     height: 100%;
+}
+
+.rating_check{
+    position: absolute;
+    top: 520px;
+    right: 20px;
 }
 
 .main_pic:hover{

@@ -20,12 +20,12 @@
     position: fixed;
     height: 95%;
     overflow-y: auto;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     right: 0;
     top: 0;
     width: 60%;
     /* transform: translateY(-2%); */
-    /* z-index: 3; */
+    z-index: 100;
 }
 
 .modal_head{
@@ -245,8 +245,10 @@
         position: absolute;
         backdrop-filter: blur(4px);
         top: 0;
-        left: 0;
-       
+        left: 0; 
+    }
+    .modal_main{
+        margin-top: 3.2rem;
     }
 }
 

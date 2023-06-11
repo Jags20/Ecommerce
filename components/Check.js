@@ -7,13 +7,12 @@ import { useRouter } from "next/router";
 const Check = () => {
 
     const router = useRouter();
-
-    const handlePlaceOrder = () => {
+    const handlePlaceOrder = (e) => {
         const fnameValue = document.querySelector(`input[name='fname']`).value;
         // const lnameValue = document.querySelector(`input[name="Lastname"]`).value;
         // const stateValue = document.querySelector(`select[name="state"]`).value;
         // const paymentValue = document.querySelector(`select[name="payment"]`).value;
-
+        e.preventDefault();
         router.push(`/final?fname=${fnameValue}`);
         // router.push(`/final?fname=${fnameValue}&lname=${lnameValue}&state=${stateValue}&payment=${paymentValue}`);
 
@@ -24,7 +23,7 @@ const Check = () => {
             <div className={styles.check}>
                 <h3 className={styles.checkout_heading}>Shipping address</h3>
                 <div className={styles.checkout}>
-                    <form method="get">
+                    <form method="post">
                         <select  className={styles.checkout_country} name="DropDown">
                             <option value="India" selected>India</option>
                             <option value="Usa">Usa</option>

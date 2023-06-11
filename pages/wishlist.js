@@ -48,9 +48,6 @@ const Wishlist = () => {
               <h1>Never settle for less</h1>
               <h2>Thrill is waiting for you</h2>
             </div>
-            {/* <img className={styles.banner} src="https://cdn.pixabay.com/photo/2016/03/19/09/42/
-            vintage-1266412_960_720.jpg" alt="banner"/> */}
-
             
             <div className={styles.cart}>
               {items.length > 0 &&
@@ -79,7 +76,7 @@ const Wishlist = () => {
           </div>
           <div className={styles.main}>
             <div className={styles.basket}>
-            <h2 className={styles.heading}>Your Shopping Basket</h2>
+            <h2 className={styles.heading}>Order Summary</h2>
             {items.length > 0 && 
               ( 
                 <button className={styles.product_btn_shop} 

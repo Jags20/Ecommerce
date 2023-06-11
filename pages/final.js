@@ -6,21 +6,20 @@ import { useRouter } from "next/router";
 const Final = () => {
 
     const router = useRouter();
-    console.log(router);
+    // console.log(router);
     const { query } = router;
-    const fname = query.fname;
+    const fname = query.fname;   // Retrieve the fname value from the query parameters
     // const lname = query.lname;
     // const state = query.state;
     // const payment = query.payment;
 
-    let OrderNo = Math.random();
+    const OrderNo = Math.random();
 
     return (
         <Layout>
         <div style={
             {display:"flex",
             flexDirection:"column",
-            // justifyContent:"center",
             alignItems:"center",
             backgroundColor:"lightcyan",
             height:"80vh"
